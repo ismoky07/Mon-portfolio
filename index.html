@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismael OUATTARA - AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio d'Ismael OUATTARA - Ingenieur IA specialise en IA Generative, RAG et Systemes Multi-Agents">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body>
+    <!-- ========================================
+         NAVIGATION
+    ======================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link" data-i18n="nav.about">A propos</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#education" class="nav-link" data-i18n="nav.education">Formation</a></li>
+                <li><a href="#contact" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Francais">
+                    FR
+                </button>
+                <button class="lang-btn" data-lang="en" title="English">
+                    EN
+                </button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION
+    ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-glow"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    <span data-i18n="hero.available">Disponible pour de nouvelles opportunites</span>
+                </div>
+                <h1 class="hero-title" id="hero-name">Ismael OUATTARA</h1>
+                <h2 class="hero-subtitle" id="hero-title">AI Engineer</h2>
+                <p class="hero-description" id="hero-subtitle">
+                    Specialise en RAG, Systemes Multi-Agents & IA Generative
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label" data-i18n="hero.efficiencyGain">Gain d'efficacite</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label" data-i18n="hero.aiProjects">Projets IA</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label" data-i18n="hero.technologies">Technologies</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="hero.viewProjects">Voir mes projets</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span data-i18n="hero.contactMe">Me contacter</span>
+                    </a>
+                </div>
+                <div class="hero-social" id="hero-social">
+                    <a href="https://www.linkedin.com/in/ismael-ouattara-a40488250/" class="social-link" title="LinkedIn" data-social="linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/ismoky07" class="social-link" title="GitHub" data-social="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:ouattaraismael.mail@gmail.com" class="social-link" title="Email" data-social="email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-border"></div>
+                    <div class="hero-image" id="hero-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="hero-floating-badge badge-top">
+                        <i class="fas fa-project-diagram"></i>
+                        <span data-i18n="badges.multiAgents">Multi-Agents</span>
+                    </div>
+                    <div class="hero-floating-badge badge-bottom">
+                        <i class="fas fa-database"></i>
+                        <span data-i18n="badges.rag">RAG</span>
+                    </div>
+                    <div class="hero-floating-badge badge-left">
+                        <i class="fas fa-robot"></i>
+                        <span data-i18n="badges.generativeAI">IA Générative</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about">
+                <span data-i18n="hero.scroll">Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT SECTION
+    ======================================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="about.tag">A propos</span>
+                <h2 class="section-title" data-i18n="about.title">Qui suis-je ?</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description" id="about-description">
+                        Ingenieur en Intelligence Artificielle specialise en IA generative, architectures RAG et systemes multi-agents.
+                        Experience dans la conception de solutions IA orientees metier (banque, juridique, RH, immobilier) avec des gains d'efficacite
+                        allant jusqu'a 99% grace a l'automatisation intelligente, l'OCR avance et l'orchestration d'agents.
+                    </p>
+                    <ul class="about-highlights" id="about-highlights">
+                        <li><i class="fas fa-check"></i> Expert en architectures RAG et systemes multi-agents</li>
+                        <li><i class="fas fa-check"></i> Specialiste OCR et traitement documentaire</li>
+                        <li><i class="fas fa-check"></i> Experience en conformite reglementaire (RGPD, ISO 27001)</li>
+                        <li><i class="fas fa-check"></i> Solutions deployees en production avec impact mesurable</li>
+                    </ul>
+                </div>
+                <div class="about-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label" data-i18n="about.location">Localisation</span>
+                            <span class="info-value" id="info-location">Casablanca, Maroc</span>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label" data-i18n="about.email">Email</span>
+                            <a href="mailto:ouattaraismael.mail@gmail.com" class="info-value info-link" id="info-email">ouattaraismael.mail@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label" data-i18n="about.phone">Telephone</span>
+                            <span class="info-value" id="info-phone">+212 660170528</span>
+                        </div>
+                    </div>
+                    <div class="info-card languages-card">
+                        <div class="info-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="info-content">
+                            <span class="info-label" data-i18n="about.languages">Langues</span>
+                            <div class="languages-list" id="languages-list">
+                                <div class="language-item">
+                                    <span>Francais</span>
+                                    <div class="language-bar">
+                                        <div class="language-progress" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <div class="language-item">
+                                    <span>Anglais</span>
+                                    <div class="language-bar">
+                                        <div class="language-progress" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SKILLS SECTION
+    ======================================== -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="skills.tag">Competences</span>
+                <h2 class="section-title" data-i18n="skills.title">Mon expertise technique</h2>
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills seront injectes via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         EXPERIENCE SECTION
+    ======================================== -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="experience.tag">Experiences</span>
+                <h2 class="section-title" data-i18n="experience.title">Mon parcours professionnel</h2>
+            </div>
+            <div class="experience-timeline" id="experience-timeline">
+                <!-- Experiences seront injectees via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PROJECTS SECTION
+    ======================================== -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projects.tag">Projets</span>
+                <h2 class="section-title" data-i18n="projects.title">Mes realisations</h2>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all" data-i18n="projects.all">Tous</button>
+                <button class="filter-btn" data-filter="ai" data-i18n="projects.ai">IA</button>
+                <button class="filter-btn" data-filter="rag" data-i18n="projects.rag">RAG</button>
+                <button class="filter-btn" data-filter="chatbot" data-i18n="projects.chatbot">Chatbot</button>
+                <button class="filter-btn" data-filter="automation" data-i18n="projects.automation">Automation</button>
+            </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projets seront injectes via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         EDUCATION SECTION
+    ======================================== -->
+    <section class="section education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="education.tag">Formation</span>
+                <h2 class="section-title" data-i18n="education.title">Mon parcours academique</h2>
+            </div>
+            <div class="education-grid" id="education-grid">
+                <!-- Formation sera injectee via JavaScript -->
+            </div>
+            <div class="soft-skills">
+                <h3 class="soft-skills-title" data-i18n="education.softSkills">Soft Skills</h3>
+                <div class="soft-skills-list" id="soft-skills-list">
+                    <!-- Soft skills seront injectes via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT SECTION
+    ======================================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact.tag">Contact</span>
+                <h2 class="section-title" data-i18n="contact.title">Travaillons ensemble</h2>
+                <p class="section-description" data-i18n="contact.description">
+                    Interesse par mes competences ? N'hesitez pas a me contacter pour discuter de vos projets.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 data-i18n="contact.email">Email</h3>
+                        <p id="contact-email">ouattaraismael.mail@gmail.com</p>
+                        <a href="mailto:ouattaraismael.mail@gmail.com" class="contact-link" data-i18n="contact.sendEmail">Envoyer un email</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 data-i18n="contact.phone">Telephone</h3>
+                        <p id="contact-phone">+212 660170528</p>
+                        <a href="tel:+212660170528" class="contact-link" data-i18n="contact.call">Appeler</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 data-i18n="contact.location">Localisation</h3>
+                        <p id="contact-location">Casablanca, Maroc</p>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <p data-i18n="contact.findMe">Retrouvez-moi sur les reseaux</p>
+                    <div class="social-links" id="contact-social">
+                        <a href="https://www.linkedin.com/in/ismael-ouattara-a40488250/" class="social-btn" data-social="linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/ismoky07" class="social-btn" data-social="github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p data-i18n="footer.brand">AI Engineer - Specialise en IA Generative</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav.about">A propos</a>
+                    <a href="#skills" data-i18n="nav.skills">Competences</a>
+                    <a href="#projects" data-i18n="nav.projects">Projets</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. <span data-i18n="footer.rights">Tous droits reserves.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/translations.js?v=4"></script>
+    <script src="js/data.js?v=5"></script>
+    <script src="js/main.js?v=5"></script>
+</body>
+</html>

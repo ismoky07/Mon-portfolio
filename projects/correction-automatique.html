@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système de Correction Automatique par IA - Ismael OUATTARA</title>
+    <meta name="description" content="Plateforme de correction intelligente avec OCR GPT-4 Vision, 15+ matières spécialisées et feedback adaptatif">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=12">
+    <link rel="stylesheet" href="../css/project-detail.css?v=3">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#experience" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#experience">Expériences</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>KERTYS</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.grading.title">Système de Correction Automatique par IA</h1>
+            <p class="project-subtitle" data-i18n="projects.grading.subtitle">Plateforme de correction intelligente avec OCR GPT-4 Vision, 15+ matières spécialisées, feedback adaptatif et génération de rapports PDF</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-building"></i>
+                    <span>KERTYS</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span data-i18n="projects.grading.period">Mars 2025 - Juillet 2025</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span data-i18n="projects.grading.role">Stagiaire AI Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.grading.context">
+                            Développement d'une plateforme complète de correction automatique d'examens combinant OCR GPT-4 Vision pour la transcription manuscrite
+                            et un moteur de correction expert par matière. Le système propose une double interface (Professeur/Étudiant),
+                            supporte 15+ matières avec des critères d'évaluation pondérés spécifiques, génère des feedbacks adaptatifs selon le niveau de performance,
+                            et produit des rapports PDF personnalisés. Trois profils de correction sont disponibles : excellence (précision maximale),
+                            équilibre (qualité/vitesse) et rapide (traitement accéléré).
+                        </p>
+                    </div>
+
+                    <!-- Dual Interface -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-users"></i> <span data-i18n="projects.grading.dualInterface">Double Interface</span></h2>
+
+                        <!-- Professor Interface -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.grading.professorInterface.title">Interface Professeur</h3>
+                                    <span class="module-subtitle" data-i18n="projects.grading.professorInterface.subtitle">Création, gestion et analyse des évaluations</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.grading.professorInterface.pages">5 pages</strong> : Dashboard → Créer Évaluation → Gérer Copies → Lancer Correction → Voir Rapports</p>
+                                <ul>
+                                    <li data-i18n="projects.grading.professorInterface.item1">Création d'examens avec questions dynamiques et barèmes configurables</li>
+                                    <li data-i18n="projects.grading.professorInterface.item2">Upload et organisation des copies PDF des étudiants</li>
+                                    <li data-i18n="projects.grading.professorInterface.item3">Lancement de la correction avec choix du profil IA</li>
+                                    <li data-i18n="projects.grading.professorInterface.item4">Statistiques détaillées : moyennes, distributions, taux de réussite</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>5</strong> pages</div>
+                                    <div class="stat"><strong>KPIs</strong> temps réel</div>
+                                    <div class="stat"><strong>Plotly</strong> charts</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Student Interface -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-user-graduate"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.grading.studentInterface.title">Interface Étudiant</h3>
+                                    <span class="module-subtitle" data-i18n="projects.grading.studentInterface.subtitle">Soumission et consultation des résultats</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.grading.studentInterface.pages">6 pages</strong> : Login → Examens Disponibles → Soumettre Copie → Mes Soumissions → Mes Résultats → Mes Rapports</p>
+                                <ul>
+                                    <li data-i18n="projects.grading.studentInterface.item1">Authentification par identifiant étudiant</li>
+                                    <li data-i18n="projects.grading.studentInterface.item2">Navigation des examens ouverts avec deadlines</li>
+                                    <li data-i18n="projects.grading.studentInterface.item3">Soumission de copies PDF avec suivi de statut</li>
+                                    <li data-i18n="projects.grading.studentInterface.item4">Consultation des notes, feedbacks IA et téléchargement des rapports PDF</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>6</strong> pages</div>
+                                    <div class="stat"><strong>PDF</strong> rapports</div>
+                                    <div class="stat"><strong>Tracking</strong> soumissions</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Correction Engine -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-brain"></i> <span data-i18n="projects.grading.correctionEngine">Moteur de Correction IA Expert</span></h2>
+
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-robot"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.grading.engine.title">SpecializedPromptBuilder + AICorreccionEngine</h3>
+                                    <span class="module-subtitle" data-i18n="projects.grading.engine.subtitle">Correction experte par matière avec feedback adaptatif</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.grading.engine.pipeline">Pipeline</strong> : OCR Transcription → Expert Correction → Smart Comments → Results Formatting</p>
+                                <ul>
+                                    <li data-i18n="projects.grading.engine.item1"><strong>15+ matières</strong> avec expertise spécifique : Maths, Physique, Chimie, Français, Anglais, Histoire, Géo, Philo, Bio, Éco, Droit...</li>
+                                    <li data-i18n="projects.grading.engine.item2"><strong>Critères pondérés par matière</strong> : ex. Maths = Calculs (40%) + Rigueur (35%) + Logique (20%) + Présentation (5%)</li>
+                                    <li data-i18n="projects.grading.engine.item3"><strong>Diagnostics avancés</strong> : détection d'erreurs conceptuelles, de calcul, de notation, de raisonnement</li>
+                                    <li data-i18n="projects.grading.engine.item4"><strong>Feedback adaptatif</strong> selon 6 niveaux de performance (90-100%, 75-89%, 60-74%, 40-59%, 20-39%, 0-19%)</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>15+</strong> matières</div>
+                                    <div class="stat"><strong>1,180</strong> lignes code</div>
+                                    <div class="stat"><strong>6</strong> niveaux feedback</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Correction Profiles -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-sliders-h"></i> <span data-i18n="projects.grading.correctionProfiles">3 Profils de Correction</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-gem"></i></div>
+                                <div class="result-label"><strong data-i18n="projects.grading.profile1.title">Excellence</strong><br><span data-i18n="projects.grading.profile1.desc">GPT-4o, 4000 tokens, Double vérification</span></div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-balance-scale"></i></div>
+                                <div class="result-label"><strong data-i18n="projects.grading.profile2.title">Équilibre</strong><br><span data-i18n="projects.grading.profile2.desc">GPT-4o, 3500 tokens, Qualité/Vitesse</span></div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-bolt"></i></div>
+                                <div class="result-label"><strong data-i18n="projects.grading.profile3.title">Rapide</strong><br><span data-i18n="projects.grading.profile3.desc">GPT-4o-mini, 2500 tokens, Traitement accéléré</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OCR System -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-eye"></i> <span data-i18n="projects.grading.ocrSystem">Système OCR Manuscrit</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.grading.ocrVision.title">GPT-4 Vision (gpt-4o)</h3>
+                                <p data-i18n="projects.grading.ocrVision.desc">
+                                    Transcription de copies manuscrites via l'API Vision de GPT-4o.
+                                    Conversion PDF vers images haute résolution avec PyMuPDF.
+                                    Trois niveaux de qualité : maximum (4000 tokens), high (3000 tokens), standard (2000 tokens).
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.grading.ocrConfidence.title">Métriques de Confiance</h3>
+                                <p data-i18n="projects.grading.ocrConfidence.desc">
+                                    Scoring de confiance OCR (0.0-1.0) basé sur les marqueurs d'incertitude.
+                                    Détection automatique : [INCERTAIN: mot], [ILLISIBLE], [SCHÉMA: description].
+                                    Évaluation de la qualité d'écriture : excellente, bonne, moyenne, difficile.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.grading.ocrSpecialized.title">Support Spécialisé</h3>
+                                <p data-i18n="projects.grading.ocrSpecialized.desc">
+                                    Reconnaissance des formules mathématiques et symboles scientifiques.
+                                    Gestion des différents styles d'écriture manuscrite.
+                                    Prétraitement d'images pour améliorer la qualité de reconnaissance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subjects Grid -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-book"></i> <span data-i18n="projects.grading.subjects">15+ Matières Spécialisées</span></h2>
+                        <div class="results-grid" style="grid-template-columns: repeat(5, 1fr);">
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-calculator"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject1">Mathématiques</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-atom"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject2">Physique</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-flask"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject3">Chimie</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-feather-alt"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject4">Français</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-language"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject5">Anglais</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-landmark"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject6">Histoire</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-globe-africa"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject7">Géographie</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-brain"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject8">Philosophie</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-dna"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject9">Biologie</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-chart-line"></i></div>
+                                <div class="result-label" data-i18n="projects.grading.subject10">Économie</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Report Generation -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-file-pdf"></i> <span data-i18n="projects.grading.reportGeneration">Génération de Rapports PDF</span></h2>
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-file-alt"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.grading.report.title">StudentReportGenerator</h3>
+                                    <span class="module-subtitle" data-i18n="projects.grading.report.subtitle">Rapports personnalisés avec ReportLab + Plotly</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.grading.report.item1">Note globale avec pourcentage et comparaison à la moyenne</li>
+                                    <li data-i18n="projects.grading.report.item2">Analyse détaillée par question avec commentaires IA</li>
+                                    <li data-i18n="projects.grading.report.item3">Points forts et axes d'amélioration personnalisés</li>
+                                    <li data-i18n="projects.grading.report.item4">Diagnostic de performance et conseils pédagogiques</li>
+                                    <li data-i18n="projects.grading.report.item5">Graphiques comparatifs (Bar/Line charts Plotly)</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>ReportLab</strong> PDF</div>
+                                    <div class="stat"><strong>Plotly</strong> charts</div>
+                                    <div class="stat"><strong>Color-coded</strong> sections</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Metrics -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-chart-bar"></i> <span data-i18n="projects.grading.metrics">Métriques du Système</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.grading.metric1.value">15+</div>
+                                <div class="result-label" data-i18n="projects.grading.metric1.label">Matières spécialisées</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.grading.metric2.value">3</div>
+                                <div class="result-label" data-i18n="projects.grading.metric2.label">Profils de correction</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.grading.metric3.value">6</div>
+                                <div class="result-label" data-i18n="projects.grading.metric3.label">Niveaux de feedback</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.grading.metric4.value">11</div>
+                                <div class="result-label" data-i18n="projects.grading.metric4.label">Pages Streamlit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">OpenAI GPT-4o</span>
+                            <span class="tech-tag">GPT-4 Vision</span>
+                            <span class="tech-tag">GPT-4o-mini</span>
+                            <span class="tech-tag">PyMuPDF</span>
+                            <span class="tech-tag">ReportLab</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Pydantic</span>
+                            <span class="tech-tag">Pillow</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.grading.feature1">15+ matières spécialisées</li>
+                            <li data-i18n="projects.grading.feature2">OCR GPT-4 Vision manuscrit</li>
+                            <li data-i18n="projects.grading.feature3">3 profils de correction</li>
+                            <li data-i18n="projects.grading.feature4">Feedback adaptatif 6 niveaux</li>
+                            <li data-i18n="projects.grading.feature5">Double interface Prof/Étudiant</li>
+                            <li data-i18n="projects.grading.feature6">Rapports PDF personnalisés</li>
+                            <li data-i18n="projects.grading.feature7">Barèmes configurables</li>
+                            <li data-i18n="projects.grading.feature8">Statistiques détaillées</li>
+                            <li data-i18n="projects.grading.feature9">Smart caching</li>
+                            <li data-i18n="projects.grading.feature10">Gestion des deadlines</li>
+                        </ul>
+                    </div>
+
+                    <!-- Performance Levels -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-signal"></i> <span data-i18n="projects.grading.feedbackLevels">Niveaux de Feedback</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.grading.level1">90-100% : Excellent</li>
+                            <li data-i18n="projects.grading.level2">75-89% : Très Bien</li>
+                            <li data-i18n="projects.grading.level3">60-74% : Bien</li>
+                            <li data-i18n="projects.grading.level4">40-59% : Moyen</li>
+                            <li data-i18n="projects.grading.level5">20-39% : Faible</li>
+                            <li data-i18n="projects.grading.level6">0-19% : Très Faible</li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-building"></i> <span data-i18n="project.company">Entreprise</span></h3>
+                        <a href="https://www.kertys.com/" target="_blank" class="company-link-box">
+                            <span>KERTYS</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.grading.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.grading.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="plateforme-universitaire.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </a>
+                <div class="nav-project next disabled">
+                    <span data-i18n="projects.grading.lastProject">Dernier projet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=3"></script>
+    <script src="../js/project-translations.js?v=5"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>

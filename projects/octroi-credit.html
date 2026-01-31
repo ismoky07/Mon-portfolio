@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système Intelligent d'Octroi de Crédit Bancaire - Ismael OUATTARA</title>
+    <meta name="description" content="Plateforme bancaire complète avec workflow LangGraph, OCR GPT-4o Vision et vérification de concordance pour 4 types de crédits">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=12">
+    <link rel="stylesheet" href="../css/project-detail.css?v=3">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#experience" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#experience">Expériences</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>KERTYS</span>
+            </div>
+            <div class="project-badge" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(99, 102, 241, 0.1); color: var(--primary); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; margin-bottom: 1rem;">
+                <i class="fas fa-graduation-cap"></i>
+                <span data-i18n="projects.credit.badge">Projet de Fin d'Études (PFE)</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.credit.title">Système Intelligent d'Octroi de Crédit Bancaire</h1>
+            <p class="project-subtitle" data-i18n="projects.credit.subtitle">Plateforme bancaire complète avec workflow LangGraph 6 nodes, OCR GPT-4o Vision pour documents marocains et vérification de concordance à 6 niveaux</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-building"></i>
+                    <span>KERTYS</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span data-i18n="projects.credit.period">Mars 2025 - Juillet 2025</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span data-i18n="projects.credit.role">Stagiaire AI Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.credit.context">
+                            Projet de fin d'études réalisé chez KERTYS pour le secteur bancaire marocain.
+                            Développement d'une plateforme intelligente d'octroi de crédit intégrant un workflow multi-agents LangGraph,
+                            un pipeline OCR basé sur GPT-4o Vision pour l'extraction automatique des documents administratifs marocains,
+                            et un système de vérification de concordance à 6 niveaux avec détection de fraude.
+                            Le système gère 4 types de crédits (Auto, Immobilier, Consommation, Découvert) avec simulateurs financiers,
+                            calculs d'amortissement et évaluation automatique de l'éligibilité basée sur le taux d'endettement.
+                        </p>
+                    </div>
+
+                    <!-- 4 Credit Types -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-credit-card"></i> <span data-i18n="projects.credit.creditTypes">Les 4 Types de Crédits</span></h2>
+
+                        <!-- Credit Auto -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-car"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.credit.auto.title">Crédit Automobile</h3>
+                                    <span class="module-subtitle" data-i18n="projects.credit.auto.subtitle">Financement de véhicules neufs et d'occasion</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.credit.auto.item1">Montant : 5 000 - 2 000 000 DH</li>
+                                    <li data-i18n="projects.credit.auto.item2">Durée : 12 à 84 mois</li>
+                                    <li data-i18n="projects.credit.auto.item3">Taux par défaut : 4.5% annuel</li>
+                                    <li data-i18n="projects.credit.auto.item4">Calcul automatique de l'apport personnel</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>84</strong> mois max</div>
+                                    <div class="stat"><strong>2M</strong> DH max</div>
+                                    <div class="stat"><strong>4.5%</strong> taux</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Credit Immo -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-home"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.credit.immo.title">Crédit Immobilier</h3>
+                                    <span class="module-subtitle" data-i18n="projects.credit.immo.subtitle">Acquisition de biens immobiliers</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.credit.immo.item1">Montant : 100 000 - 10 000 000 DH</li>
+                                    <li data-i18n="projects.credit.immo.item2">Durée : 60 à 360 mois (5-30 ans)</li>
+                                    <li data-i18n="projects.credit.immo.item3">Taux par défaut : 3.5% annuel</li>
+                                    <li data-i18n="projects.credit.immo.item4">Calcul des frais de notaire inclus</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>30</strong> ans max</div>
+                                    <div class="stat"><strong>10M</strong> DH max</div>
+                                    <div class="stat"><strong>3.5%</strong> taux</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Credit Conso -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-shopping-cart"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.credit.conso.title">Crédit Consommation</h3>
+                                    <span class="module-subtitle" data-i18n="projects.credit.conso.subtitle">Projets personnels, équipements, études, santé</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.credit.conso.item1">Montant : 5 000 - 300 000 DH</li>
+                                    <li data-i18n="projects.credit.conso.item2">Durée : 6 à 60 mois</li>
+                                    <li data-i18n="projects.credit.conso.item3">Taux par défaut : 6.5% annuel</li>
+                                    <li data-i18n="projects.credit.conso.item4">Projets : équipement, mariage, études, santé</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>60</strong> mois max</div>
+                                    <div class="stat"><strong>300K</strong> DH max</div>
+                                    <div class="stat"><strong>6.5%</strong> taux</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decouvert -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-wallet"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.credit.decouvert.title">Découvert Bancaire</h3>
+                                    <span class="module-subtitle" data-i18n="projects.credit.decouvert.subtitle">Facilité de caisse occasionnelle ou permanente</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.credit.decouvert.item1">Montant : 1 000 - 50 000 DH</li>
+                                    <li data-i18n="projects.credit.decouvert.item2">Types : Occasionnel (1 mois), Court terme (3 mois), Permanent</li>
+                                    <li data-i18n="projects.credit.decouvert.item3">Taux fixe : 12% annuel</li>
+                                    <li data-i18n="projects.credit.decouvert.item4">Commission variable selon le type</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>50K</strong> DH max</div>
+                                    <div class="stat"><strong>12%</strong> taux fixe</div>
+                                    <div class="stat"><strong>3</strong> types</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OCR Workflow -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-project-diagram"></i> <span data-i18n="projects.credit.ocrPipeline">Pipeline OCR LangGraph (6 Nodes)</span></h2>
+
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-eye"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.credit.ocrWorkflow.title">Workflow d'Extraction & Vérification</h3>
+                                    <span class="module-subtitle" data-i18n="projects.credit.ocrWorkflow.subtitle">State Machine LangGraph avec 6 étapes séquentielles</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.credit.ocrWorkflow.pipeline">Pipeline</strong> : charger_documents → valider_pdfs → convertir_en_images → extraire_et_parser_infos → verifier_concordance → generer_rapport</p>
+                                <ul>
+                                    <li data-i18n="projects.credit.ocrWorkflow.item1"><strong>Node 1-2 :</strong> Chargement et validation des PDFs avec PyMuPDF</li>
+                                    <li data-i18n="projects.credit.ocrWorkflow.item2"><strong>Node 3 :</strong> Conversion en images PNG à 300 DPI pour OCR optimal</li>
+                                    <li data-i18n="projects.credit.ocrWorkflow.item3"><strong>Node 4 :</strong> Extraction GPT-4o Vision avec mode récupération (qualité &lt;50)</li>
+                                    <li data-i18n="projects.credit.ocrWorkflow.item4"><strong>Node 5 :</strong> Vérification de concordance à 6 niveaux inter-documents</li>
+                                    <li data-i18n="projects.credit.ocrWorkflow.item5"><strong>Node 6 :</strong> Génération de rapports multi-formats (TXT/JSON/PDF)</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>6</strong> nodes LangGraph</div>
+                                    <div class="stat"><strong>GPT-4o</strong> Vision</div>
+                                    <div class="stat"><strong>300</strong> DPI</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Document Verification -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-check-double"></i> <span data-i18n="projects.credit.verification">Vérification de Concordance (6 Niveaux)</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.verif1.title">1. Identité & 2. Identifiants Officiels</h3>
+                                <p data-i18n="projects.credit.verif1.desc">
+                                    Vérification de la cohérence du nom, prénom et date de naissance entre tous les documents.
+                                    Validation du format CIN marocain (1-2 lettres + 5-6 chiffres), numéro de passeport et CNSS.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.verif2.title">3. Adresse & Contact</h3>
+                                <p data-i18n="projects.credit.verif2.desc">
+                                    Vérification de la cohérence des adresses entre CIN, factures et relevés.
+                                    Validation des formats téléphone marocain et email.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.verif3.title">4. Cohérence Financière</h3>
+                                <p data-i18n="projects.credit.verif3.desc">
+                                    Comparaison des montants de salaire entre bulletins et relevés bancaires.
+                                    Vérification de l'historique de paiements et des soldes.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.verif4.title">5. Cohérence Temporelle</h3>
+                                <p data-i18n="projects.credit.verif4.desc">
+                                    Validation des dates d'expiration des documents.
+                                    Calcul de l'âge et vérification de l'ancienneté professionnelle.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.verif5.title">6. Vérification Croisée Spécialisée</h3>
+                                <p data-i18n="projects.credit.verif5.desc">
+                                    Cohérence du nom d'employeur entre documents.
+                                    Détection des patterns suspects et génération de recommandations.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Moroccan Documents -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-file-alt"></i> <span data-i18n="projects.credit.documents">Documents Marocains Supportés</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-id-card"></i></div>
+                                <div class="result-label" data-i18n="projects.credit.doc1">CIN - Carte Nationale</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-passport"></i></div>
+                                <div class="result-label" data-i18n="projects.credit.doc2">Passeport</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-bolt"></i></div>
+                                <div class="result-label" data-i18n="projects.credit.doc3">Factures ONE/REDAL</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-file-invoice-dollar"></i></div>
+                                <div class="result-label" data-i18n="projects.credit.doc4">Bulletins de Salaire</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial Features -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-calculator"></i> <span data-i18n="projects.credit.financial">Fonctionnalités Financières</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.simulator.title">Simulateur de Crédit</h3>
+                                <p data-i18n="projects.credit.simulator.desc">
+                                    Calcul des mensualités avec formule d'amortissement standard.
+                                    Tableau d'amortissement complet mois par mois avec répartition intérêts/capital.
+                                    Jauge visuelle d'éligibilité (vert/orange/rouge selon le taux d'endettement).
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.eligibility.title">Évaluation d'Éligibilité</h3>
+                                <p data-i18n="projects.credit.eligibility.desc">
+                                    Seuil d'endettement maximum : 40% du revenu mensuel.
+                                    Seuil recommandé : 33% du revenu.
+                                    Calcul automatique de la capacité d'emprunt maximale.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.credit.dashboard.title">Dashboard Admin</h3>
+                                <p data-i18n="projects.credit.dashboard.desc">
+                                    KPIs en temps réel : total demandes, en attente, taux d'acceptation/refus.
+                                    Graphiques interactifs Plotly : distribution par type, évolution temporelle, montants comparatifs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-chart-bar"></i> <span data-i18n="projects.credit.metrics">Métriques du Système</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.credit.metric1.value">4</div>
+                                <div class="result-label" data-i18n="projects.credit.metric1.label">Types de crédits</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.credit.metric2.value">6</div>
+                                <div class="result-label" data-i18n="projects.credit.metric2.label">Nodes LangGraph</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.credit.metric3.value">6</div>
+                                <div class="result-label" data-i18n="projects.credit.metric3.label">Niveaux vérification</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.credit.metric4.value">6</div>
+                                <div class="result-label" data-i18n="projects.credit.metric4.label">Types documents OCR</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">LangGraph</span>
+                            <span class="tech-tag">OpenAI GPT-4o</span>
+                            <span class="tech-tag">GPT-4 Vision</span>
+                            <span class="tech-tag">PyMuPDF</span>
+                            <span class="tech-tag">ReportLab</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Pydantic</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.credit.feature1">4 types de crédits</li>
+                            <li data-i18n="projects.credit.feature2">Workflow LangGraph 6 nodes</li>
+                            <li data-i18n="projects.credit.feature3">OCR GPT-4o Vision</li>
+                            <li data-i18n="projects.credit.feature4">Documents marocains (CIN, etc.)</li>
+                            <li data-i18n="projects.credit.feature5">Vérification 6 niveaux</li>
+                            <li data-i18n="projects.credit.feature6">Mode récupération qualité</li>
+                            <li data-i18n="projects.credit.feature7">Scoring d'éligibilité</li>
+                            <li data-i18n="projects.credit.feature8">Tableau d'amortissement</li>
+                            <li data-i18n="projects.credit.feature9">Dashboard KPIs</li>
+                            <li data-i18n="projects.credit.feature10">Rapports TXT/JSON/PDF</li>
+                        </ul>
+                    </div>
+
+                    <!-- Quality Scoring -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-tachometer-alt"></i> <span data-i18n="projects.credit.qualityScoring">Scoring Qualité OCR</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.credit.quality1">EXCELLENT : ≥90 points</li>
+                            <li data-i18n="projects.credit.quality2">BON : 70-89 points</li>
+                            <li data-i18n="projects.credit.quality3">MOYEN : 50-69 points</li>
+                            <li data-i18n="projects.credit.quality4">FAIBLE : &lt;50 (mode récup.)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-building"></i> <span data-i18n="project.company">Entreprise</span></h3>
+                        <a href="https://www.kertys.com/" target="_blank" class="company-link-box">
+                            <span>KERTYS</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.credit.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.credit.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="alm-finance.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </a>
+                <a href="plateforme-universitaire.html" class="nav-project next">
+                    <span data-i18n="project.next">Projet suivant</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=3"></script>
+    <script src="../js/project-translations.js?v=5"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>

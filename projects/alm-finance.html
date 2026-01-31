@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALM - Système de Gestion Actif-Passif - Ismael OUATTARA</title>
+    <meta name="description" content="Système multi-agents IA pour la gestion Actif-Passif bancaire avec 6 agents spécialisés et conformité Basel III">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=12">
+    <link rel="stylesheet" href="../css/project-detail.css?v=3">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#experience" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#experience">Expériences</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>TALENT PERFORMER</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.alm.title">Système Intelligent de Gestion Actif-Passif</h1>
+            <p class="project-subtitle" data-i18n="projects.alm.subtitle">Système intelligent d'IA pour la gestion Actif-Passif bancaire avec 6 agents spécialisés, conformité Basel III et dashboard interactif</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-building"></i>
+                    <span>TALENT PERFORMER</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span data-i18n="projects.alm.period">Juillet 2025 - Novembre 2025</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span>AI Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.alm.context">
+                            Développement d'un système intelligent de gestion Actif-Passif avec 6 agents IA spécialisés pour automatiser l'évaluation des risques financiers,
+                            la gestion du capital, l'optimisation de la rentabilité et les opérations de trésorerie.
+                            Cette plateforme intelligente orchestre 6 agents IA spécialisés pour automatiser l'évaluation des risques financiers,
+                            la gestion du capital, l'optimisation de la rentabilité et les opérations de trésorerie.
+                            Le système intègre une architecture multi-LLM avec fallback automatique (xAI Grok-3, OpenAI GPT-4, Claude, Mistral, DeepSeek),
+                            une base vectorielle PgVector pour la recherche sémantique dans les documents réglementaires,
+                            et un dashboard interactif avec streaming temps réel des réponses.
+                        </p>
+                    </div>
+
+                    <!-- 6 Agents -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cubes"></i> <span data-i18n="projects.alm.agents">Les 6 Agents Spécialisés</span></h2>
+
+                        <!-- Agent 1 -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-tint"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.alm.agent1.title">Agent 1 : Liquidity & Interest Rate Risk Assessor</h3>
+                                    <span class="module-subtitle" data-i18n="projects.alm.agent1.subtitle">Évaluation des risques de liquidité et de taux</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.alm.agent1.tools">Outils</strong> : calculate_liquidity_gaps() → calculate_eve_sensitivity() → calculate_nii_sensitivity()</p>
+                                <ul>
+                                    <li data-i18n="projects.alm.agent1.item1">Calcul du LCR (Liquidity Coverage Ratio) avec seuil Basel III ≥100%</li>
+                                    <li data-i18n="projects.alm.agent1.item2">Analyse des gaps de liquidité par bucket temporel (0-30, 30-90, 90-180+ jours)</li>
+                                    <li data-i18n="projects.alm.agent1.item3">Sensibilité EVE (Economic Value of Equity) aux chocs de taux ±200 bps</li>
+                                    <li data-i18n="projects.alm.agent1.item4">Projection NII (Net Interest Income) sur 12 mois glissants</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>LCR</strong> ≥100%</div>
+                                    <div class="stat"><strong>EVE</strong> ≤15% equity</div>
+                                    <div class="stat"><strong>NII</strong> ≤10%/an</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agent 2 -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.alm.agent2.title">Agent 2 : Solvency & Capital Strategist</h3>
+                                    <span class="module-subtitle" data-i18n="projects.alm.agent2.subtitle">Adéquation du capital et financement de contingence</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.alm.agent1.tools">Outils</strong> : simulate_contingency_funding() → optimize_balance_sheet()</p>
+                                <ul>
+                                    <li data-i18n="projects.alm.agent2.item1">Suivi des ratios de capital : CET1 ≥8%, Tier 1 ≥10%, Total ≥12%</li>
+                                    <li data-i18n="projects.alm.agent2.item2">Simulation de financement d'urgence avec 3 sources (Banque Centrale, ventes actifs, lignes de crédit)</li>
+                                    <li data-i18n="projects.alm.agent2.item3">Détection des triggers de contingence (LCR &lt;110%, retrait dépôts &gt;10%)</li>
+                                    <li data-i18n="projects.alm.agent2.item4">Optimisation du bilan pour améliorer l'efficacité du capital</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>CET1</strong> ≥8%</div>
+                                    <div class="stat"><strong>Leverage</strong> ≥3%</div>
+                                    <div class="stat"><strong>3</strong> sources contingence</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agent 3 -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.alm.agent3.title">Agent 3 : Profitability Optimizer</h3>
+                                    <span class="module-subtitle" data-i18n="projects.alm.agent3.subtitle">Optimisation des rendements et coûts de financement</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.alm.agent1.tools">Outils</strong> : optimize_yield() → optimize_funding_cost()</p>
+                                <ul>
+                                    <li data-i18n="projects.alm.agent3.item1">Réallocation des actifs pour maximiser les rendements ajustés au risque</li>
+                                    <li data-i18n="projects.alm.agent3.item2">Réduction des coûts de financement via priorisation des dépôts retail</li>
+                                    <li data-i18n="projects.alm.agent3.item3">Respect des limites : 10% buffer liquidité, 25% max par classe d'actifs</li>
+                                    <li data-i18n="projects.alm.agent3.item4">Plafonnement du financement court terme à 15% des passifs</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>25%</strong> max concentration</div>
+                                    <div class="stat"><strong>15%</strong> max CT</div>
+                                    <div class="stat"><strong>110%</strong> LTD ratio</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agent 4 -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-flask"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.alm.agent4.title">Agent 4 : Risk Model Builder</h3>
+                                    <span class="module-subtitle" data-i18n="projects.alm.agent4.subtitle">Construction et validation des modèles de risque</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.alm.agent1.tools">Outils</strong> : project_liquidity() → calculate_interest_rate_sensitivity()</p>
+                                <ul>
+                                    <li data-i18n="projects.alm.agent4.item1">Projection de liquidité à 90 jours avec engagements hors-bilan</li>
+                                    <li data-i18n="projects.alm.agent4.item2">Modélisation IRRBB (Interest Rate Risk in Banking Book)</li>
+                                    <li data-i18n="projects.alm.agent4.item3">Scénarios de choc : shifts parallèles, pentification, aplatissement</li>
+                                    <li data-i18n="projects.alm.agent4.item4">Génération de matrices de sensibilité NII et EVE</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>90j</strong> projection</div>
+                                    <div class="stat"><strong>IRRBB</strong> compliant</div>
+                                    <div class="stat"><strong>6</strong> scénarios stress</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agent 5 -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-cogs"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.alm.agent5.title">Agent 5 : Liquidity Operations Manager</h3>
+                                    <span class="module-subtitle" data-i18n="projects.alm.agent5.subtitle">Monitoring quotidien et exécution des stratégies</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.alm.agent1.tools">Outils</strong> : monitor_daily_liquidity() → simulate_funding_strategy()</p>
+                                <ul>
+                                    <li data-i18n="projects.alm.agent5.item1">Suivi temps réel des positions de trésorerie par devise</li>
+                                    <li data-i18n="projects.alm.agent5.item2">Calcul des flux nets et détection des shortfalls quotidiens</li>
+                                    <li data-i18n="projects.alm.agent5.item3">Allocation optimale : marché interbancaire, repo, Banque Centrale</li>
+                                    <li data-i18n="projects.alm.agent5.item4">Minimisation des coûts avec priorisation des sources les moins chères</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>Real-time</strong> monitoring</div>
+                                    <div class="stat"><strong>Multi-devise</strong></div>
+                                    <div class="stat"><strong>3</strong> sources funding</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Agent 6 -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-bullseye"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.alm.agent6.title">Agent 6 : Treasury ALM Risk Controller</h3>
+                                    <span class="module-subtitle" data-i18n="projects.alm.agent6.subtitle">Supervision trésorerie et risque FX/contrepartie</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.alm.agent1.tools">Outils</strong> : calculate_fx_counterparty_risk() → calculate_alm_metrics()</p>
+                                <ul>
+                                    <li data-i18n="projects.alm.agent6.item1">Calcul des expositions FX par devise (USD, EUR, etc.) ajustées au change</li>
+                                    <li data-i18n="projects.alm.agent6.item2">Surveillance des limites contrepartie et alertes de dépassement</li>
+                                    <li data-i18n="projects.alm.agent6.item3">Dashboard ALM complet : actifs/passifs, ratio liquidité, gap taux, CAR</li>
+                                    <li data-i18n="projects.alm.agent6.item4">Détection du risque de concentration et équilibre financier global</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>FX</strong> multi-devise</div>
+                                    <div class="stat"><strong>Counterparty</strong> limits</div>
+                                    <div class="stat"><strong>CAR</strong> metrics</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Architecture -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cogs"></i> <span data-i18n="projects.alm.technicalArch">Architecture Technique</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.alm.multiLLM.title">Multi-LLM avec Fallback</h3>
+                                <p data-i18n="projects.alm.multiLLM.desc">
+                                    Support de 5 fournisseurs LLM avec basculement automatique en cas d'échec.
+                                    <strong>xAI Grok-3</strong> (principal), <strong>OpenAI GPT-4o</strong>, <strong>Anthropic Claude Sonnet</strong>,
+                                    <strong>Mistral Large</strong>, <strong>DeepSeek Chat</strong>.
+                                    Sélection dynamique du provider via le dashboard sans redéploiement.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.alm.vectorDB.title">Base Vectorielle & Knowledge</h3>
+                                <p data-i18n="projects.alm.vectorDB.desc">
+                                    <strong>PostgreSQL + PgVector</strong> hébergé sur Neon.tech pour la recherche sémantique hybride.
+                                    6 fichiers markdown de knowledge base réglementaire (Basel III, IRRBB, LCR).
+                                    Chunking sémantique (1000 tokens, seuil 0.5) avec embeddings SentenceTransformer ou OpenAI.
+                                    Upload dynamique de documents (MD, JSON, CSV, Excel, PDF).
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.alm.apiDashboard.title">API REST & Dashboard</h3>
+                                <p data-i18n="projects.alm.apiDashboard.desc">
+                                    API Flask avec endpoints par agent et streaming SSE pour les réponses longues.
+                                    Dashboard interactif Tailwind CSS avec inspection des outils, upload de fichiers,
+                                    configuration des API keys et instructions personnalisées par agent.
+                                    Déploiement Heroku-ready avec Gunicorn et Docker Compose pour PostgreSQL local.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Regulatory Compliance -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-balance-scale"></i> <span data-i18n="projects.alm.compliance">Conformité Réglementaire</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value">Basel III</div>
+                                <div class="result-label" data-i18n="projects.alm.complianceBasel">Ratios de capital CET1/Tier1</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value">LCR</div>
+                                <div class="result-label" data-i18n="projects.alm.complianceLCR">Liquidity Coverage Ratio ≥100%</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value">IRRBB</div>
+                                <div class="result-label" data-i18n="projects.alm.complianceIRRBB">Interest Rate Risk Banking Book</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value">EVE/NII</div>
+                                <div class="result-label" data-i18n="projects.alm.complianceEVE">Sensibilité aux taux ±200bps</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Metrics -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-chart-bar"></i> <span data-i18n="projects.alm.metrics">Métriques du Système</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value">6</div>
+                                <div class="result-label" data-i18n="projects.alm.metric1.label">Agents IA spécialisés</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value">5</div>
+                                <div class="result-label" data-i18n="projects.alm.metric2.label">Fournisseurs LLM supportés</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value">12</div>
+                                <div class="result-label" data-i18n="projects.alm.metric3.label">Outils de calcul financier</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value">6</div>
+                                <div class="result-label" data-i18n="projects.alm.metric4.label">Knowledge bases réglementaires</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Agno Framework</span>
+                            <span class="tech-tag">xAI Grok-3</span>
+                            <span class="tech-tag">OpenAI GPT-4</span>
+                            <span class="tech-tag">Claude Sonnet</span>
+                            <span class="tech-tag">Mistral Large</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">PgVector</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Gunicorn</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.alm.feature1">6 agents ALM spécialisés</li>
+                            <li data-i18n="projects.alm.feature2">Multi-LLM avec fallback auto</li>
+                            <li data-i18n="projects.alm.feature3">Conformité Basel III complète</li>
+                            <li data-i18n="projects.alm.feature4">Calculs LCR, EVE, NII, CAR</li>
+                            <li data-i18n="projects.alm.feature5">Recherche sémantique hybride</li>
+                            <li data-i18n="projects.alm.feature6">Streaming temps réel (SSE)</li>
+                            <li data-i18n="projects.alm.feature7">Dashboard interactif</li>
+                            <li data-i18n="projects.alm.feature8">Upload documents dynamique</li>
+                            <li data-i18n="projects.alm.feature9">API REST complète</li>
+                            <li data-i18n="projects.alm.feature10">Déploiement cloud-ready</li>
+                        </ul>
+                    </div>
+
+                    <!-- Regulatory Standards -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-gavel"></i> <span data-i18n="projects.alm.standards">Standards Réglementaires</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.alm.standard1">Basel III Capital Framework</li>
+                            <li data-i18n="projects.alm.standard2">IRRBB Guidelines</li>
+                            <li data-i18n="projects.alm.standard3">LCR/NSFR Requirements</li>
+                            <li data-i18n="projects.alm.standard4">Stress Testing Standards</li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-building"></i> <span data-i18n="project.company">Entreprise</span></h3>
+                        <a href="https://www.talentperformer.com/" target="_blank" class="company-link-box">
+                            <span>TALENT PERFORMER</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.alm.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.alm.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="gestion-immobilier.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </a>
+                <a href="octroi-credit.html" class="nav-project next">
+                    <span data-i18n="project.next">Projet suivant</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=3"></script>
+    <script src="../js/project-translations.js?v=5"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>

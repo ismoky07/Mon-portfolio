@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme Universitaire Intelligente - Ismael OUATTARA</title>
+    <meta name="description" content="Plateforme éducative complète avec 3 rôles, vérification OCR des candidatures et correction IA automatique">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=12">
+    <link rel="stylesheet" href="../css/project-detail.css?v=3">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#experience" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#experience">Expériences</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>KERTYS</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.university.title">Plateforme Universitaire Intelligente</h1>
+            <p class="project-subtitle" data-i18n="projects.university.subtitle">Plateforme éducative complète avec 3 rôles utilisateurs, vérification OCR des candidatures, correction IA automatique et génération de rapports PDF</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-building"></i>
+                    <span>KERTYS</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span data-i18n="projects.university.period">Mars 2025 - Juillet 2025</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user-tie"></i>
+                    <span data-i18n="projects.university.role">Stagiaire AI Engineer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.university.context">
+                            Développement d'une plateforme universitaire complète intégrant l'IA à chaque étape du parcours académique.
+                            Le système gère 3 rôles utilisateurs (Admin, Professeur, Étudiant) avec des interfaces dédiées.
+                            L'administrateur vérifie les candidatures via OCR des bulletins scolaires avec détection d'anomalies.
+                            Les professeurs créent des évaluations et lancent la correction automatique par IA (GPT-4 Vision + GPT-4).
+                            Les étudiants soumettent leurs candidatures, passent des examens et consultent leurs résultats avec rapports PDF personnalisés.
+                        </p>
+                    </div>
+
+                    <!-- 3 User Roles -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-users"></i> <span data-i18n="projects.university.userRoles">Les 3 Rôles Utilisateurs</span></h2>
+
+                        <!-- Admin Role -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-user-shield"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.university.admin.title">Administrateur</h3>
+                                    <span class="module-subtitle" data-i18n="projects.university.admin.subtitle">Gestion des candidatures et vérification OCR</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.university.admin.module">Module Admin</strong> : Vérification automatique des bulletins scolaires par OCR GPT-4 Vision</p>
+                                <ul>
+                                    <li data-i18n="projects.university.admin.item1">Détection d'anomalies : écarts de notes >2 points, moyennes incohérentes</li>
+                                    <li data-i18n="projects.university.admin.item2">Comparaison notes déclarées vs notes OCR extraites des bulletins</li>
+                                    <li data-i18n="projects.university.admin.item3">Vérification d'identité : nom sur bulletin vs formulaire</li>
+                                    <li data-i18n="projects.university.admin.item4">Statuts de validation : En attente, Validée, Rejetée, Anomalie détectée</li>
+                                    <li data-i18n="projects.university.admin.item5">Export rapports Excel/CSV/PDF avec logs d'activité</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>OCR</strong> bulletins</div>
+                                    <div class="stat"><strong>Anomaly</strong> detection</div>
+                                    <div class="stat"><strong>Excel</strong> export</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Professor Role -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.university.professor.title">Professeur</h3>
+                                    <span class="module-subtitle" data-i18n="projects.university.professor.subtitle">Création d'examens et correction automatique IA</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.university.professor.pages">5 pages</strong> : Dashboard → Créer Évaluation → Gérer Copies → Lancer Correction → Voir Rapports</p>
+                                <ul>
+                                    <li data-i18n="projects.university.professor.item1">Création d'examens avec questions dynamiques et barèmes configurables</li>
+                                    <li data-i18n="projects.university.professor.item2">3 profils de correction IA : Excellence (GPT-4), Équilibre, Rapide (GPT-4 Mini)</li>
+                                    <li data-i18n="projects.university.professor.item3">16+ matières spécialisées avec critères d'évaluation pondérés</li>
+                                    <li data-i18n="projects.university.professor.item4">Statistiques de classe : moyennes, distributions, taux de réussite</li>
+                                    <li data-i18n="projects.university.professor.item5">Contrôle de publication : décider quand les étudiants voient leurs notes</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>5</strong> pages</div>
+                                    <div class="stat"><strong>16+</strong> matières</div>
+                                    <div class="stat"><strong>3</strong> profils IA</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Student Role -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-user-graduate"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.university.student.title">Étudiant</h3>
+                                    <span class="module-subtitle" data-i18n="projects.university.student.subtitle">Candidature, examens et consultation des résultats</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.university.student.module">Module Forms + 6 pages Student</strong> : Candidature → Login → Examens → Soumettre → Résultats → Rapports</p>
+                                <ul>
+                                    <li data-i18n="projects.university.student.item1">Formulaire de candidature avec upload de bulletins PDF</li>
+                                    <li data-i18n="projects.university.student.item2">Saisie des notes par niveau d'études (BAC, Licence, Master)</li>
+                                    <li data-i18n="projects.university.student.item3">Soumission d'examens : PDF scan, saisie digitale ou photo</li>
+                                    <li data-i18n="projects.university.student.item4">Consultation des notes publiées avec classement</li>
+                                    <li data-i18n="projects.university.student.item5">Téléchargement de rapports PDF personnalisés avec feedback IA</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>6</strong> pages</div>
+                                    <div class="stat"><strong>3</strong> niveaux études</div>
+                                    <div class="stat"><strong>PDF</strong> rapports</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OCR Verification Agent -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-search"></i> <span data-i18n="projects.university.ocrAgent">Agent OCR de Vérification</span></h2>
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-file-search"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.university.ocr.title">agentOCR/agent.py</h3>
+                                    <span class="module-subtitle" data-i18n="projects.university.ocr.subtitle">Vérification automatique des bulletins scolaires</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <p><strong data-i18n="projects.university.ocr.workflow">Workflow</strong> : Détection bulletins → Extraction OCR → Comparaison notes → Rapport anomalies</p>
+                                <ul>
+                                    <li data-i18n="projects.university.ocr.item1"><strong>Vérification d'identité :</strong> Nom sur bulletin vs nom déclaré</li>
+                                    <li data-i18n="projects.university.ocr.item2"><strong>Comparaison des notes :</strong> Notes déclarées vs notes extraites par OCR</li>
+                                    <li data-i18n="projects.university.ocr.item3"><strong>Détection d'anomalies :</strong> Écart >2 points = anomalie majeure</li>
+                                    <li data-i18n="projects.university.ocr.item4"><strong>Score de confiance OCR :</strong> Seuil 0.7 pour validation</li>
+                                </ul>
+                                <div class="module-stats">
+                                    <div class="stat"><strong>GPT-4</strong> Vision</div>
+                                    <div class="stat"><strong>0.7</strong> seuil confiance</div>
+                                    <div class="stat"><strong>2pts</strong> tolérance</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Correction Module -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-robot"></i> <span data-i18n="projects.university.correctionModule">Module de Correction IA</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.university.correction.engine.title">AI Correction Engine</h3>
+                                <p data-i18n="projects.university.correction.engine.desc">
+                                    Moteur de correction avec prompts spécialisés par matière.
+                                    Triple vérification IA pour la précision des notes.
+                                    Feedback détaillé par question avec diagnostic d'erreurs.
+                                    Recommandations pédagogiques personnalisées.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.university.correction.ocrManuscrit.title">OCR Manuscrit</h3>
+                                <p data-i18n="projects.university.correction.ocrManuscrit.desc">
+                                    Transcription GPT-4 Vision des copies manuscrites.
+                                    Détection des formules mathématiques.
+                                    Scoring de confiance et qualité d'écriture.
+                                    Support des mots incertains avec probabilités.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.university.correction.smartCache.title">Smart Caching</h3>
+                                <p data-i18n="projects.university.correction.smartCache.desc">
+                                    Cache intelligent basé sur hash des répertoires.
+                                    Invalidation automatique lors de modifications.
+                                    Gestion des états de publication des résultats.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Study Levels -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-graduation-cap"></i> <span data-i18n="projects.university.studyLevels">Niveaux d'Études Supportés</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-school"></i></div>
+                                <div class="result-label"><strong data-i18n="projects.university.level1.title">BAC</strong><br><span data-i18n="projects.university.level1.desc">2nde, 1ère, Terminale</span></div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-university"></i></div>
+                                <div class="result-label"><strong data-i18n="projects.university.level2.title">Licence</strong><br><span data-i18n="projects.university.level2.desc">L1, L2, L3</span></div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value"><i class="fas fa-user-graduate"></i></div>
+                                <div class="result-label"><strong data-i18n="projects.university.level3.title">Master</strong><br><span data-i18n="projects.university.level3.desc">M1, M2</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Metrics -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-chart-bar"></i> <span data-i18n="projects.university.metrics">Métriques du Système</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.university.metric1.value">3</div>
+                                <div class="result-label" data-i18n="projects.university.metric1.label">Rôles utilisateurs</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.university.metric2.value">3</div>
+                                <div class="result-label" data-i18n="projects.university.metric2.label">Modules principaux</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.university.metric3.value">16+</div>
+                                <div class="result-label" data-i18n="projects.university.metric3.label">Matières supportées</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.university.metric4.value">11</div>
+                                <div class="result-label" data-i18n="projects.university.metric4.label">Pages Streamlit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">OpenAI GPT-4</span>
+                            <span class="tech-tag">GPT-4 Vision</span>
+                            <span class="tech-tag">PyMuPDF</span>
+                            <span class="tech-tag">ReportLab</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Pillow</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.university.feature1">3 rôles : Admin, Prof, Étudiant</li>
+                            <li data-i18n="projects.university.feature2">OCR vérification bulletins</li>
+                            <li data-i18n="projects.university.feature3">Détection d'anomalies notes</li>
+                            <li data-i18n="projects.university.feature4">Correction IA 16+ matières</li>
+                            <li data-i18n="projects.university.feature5">3 profils de correction</li>
+                            <li data-i18n="projects.university.feature6">Publication contrôlée</li>
+                            <li data-i18n="projects.university.feature7">Rapports PDF personnalisés</li>
+                            <li data-i18n="projects.university.feature8">Smart caching</li>
+                            <li data-i18n="projects.university.feature9">Export Excel/CSV</li>
+                            <li data-i18n="projects.university.feature10">Gestion des deadlines</li>
+                        </ul>
+                    </div>
+
+                    <!-- Demo Accounts -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-key"></i> <span data-i18n="projects.university.demoAccounts">Comptes Démo</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.university.demo1">Admin: admin@univ.fr</li>
+                            <li data-i18n="projects.university.demo2">Prof: martin@univ.fr</li>
+                            <li data-i18n="projects.university.demo3">Student: sarah@univ.fr</li>
+                        </ul>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-building"></i> <span data-i18n="project.company">Entreprise</span></h3>
+                        <a href="https://www.kertys.com/" target="_blank" class="company-link-box">
+                            <span>KERTYS</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.university.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.university.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="octroi-credit.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </a>
+                <a href="correction-automatique.html" class="nav-project next">
+                    <span data-i18n="project.next">Projet suivant</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=3"></script>
+    <script src="../js/project-translations.js?v=5"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>
