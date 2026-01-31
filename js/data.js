@@ -33,12 +33,12 @@ const portfolioData = {
     // ========================================
     about: {
         description: {
-            fr: `Jeune ingénieur en Intelligence Artificielle passionné par l'IA générative, les architectures RAG et les systèmes multi-agents.
-            Première expérience professionnelle chez Talent Performer, complétée par des stages et POC dans des domaines variés (banque, juridique, RH, immobilier, éducation),
-            avec un focus sur l'automatisation intelligente, l'OCR et l'orchestration d'agents.`,
-            en: `Junior AI Engineer passionate about generative AI, RAG architectures and multi-agent systems.
-            First professional experience at Talent Performer, complemented by internships and POCs in various domains (banking, legal, HR, real estate, education),
-            with a focus on intelligent automation, OCR and agent orchestration.`
+            fr: `AI Engineer spécialisé en Intelligence Artificielle Générative, architectures RAG et systèmes multi-agents.
+Expérience dans la conception de plateformes IA complexes pour des secteurs à forte exigence métier : banque, juridique, immobilier, éducation et services publics.
+Expert en orchestration d’agents IA, OCR intelligent, automatisation de workflows et applications LLM de bout en bout.`,
+            en: `AI Engineer specialized in Generative Artificial Intelligence, RAG architectures, and multi-agent systems.
+Proven experience in designing complex AI platforms for high-stakes domains such as banking, legal, real estate, education, and public services.
+Strong expertise in AI agent orchestration, intelligent OCR, workflow automation, and end-to-end LLM-based applications.`
         },
         highlights: {
             fr: [
@@ -177,8 +177,8 @@ const portfolioData = {
                 },
                 {
                     name: {
-                        fr: "ALM - Système de Gestion Actif-Passif",
-                        en: "ALM - Asset Liability Management System"
+                        fr: "Système Intelligent de Gestion Actif-Passif",
+                        en: "Intelligent Asset Liability Management System"
                     },
                     projectUrl: "projects/alm-finance.html",
                     githubUrl: "https://github.com/ismoky07/FinanceOS/tree/main/Finance%20Modules/ALM",
@@ -188,12 +188,12 @@ const portfolioData = {
                     },
                     achievements: {
                         fr: [
-                            "Développement de 6 agents ALM spécialisés (liquidité, solvabilité, rentabilité, risque, trésorerie)",
+                            "Développement de 6 agents IA spécialisés (liquidité, solvabilité, rentabilité, risque, trésorerie)",
                             "Support multi-LLM avec fallback automatique (xAI Grok-3, GPT-4, Claude, Mistral, DeepSeek)",
                             "Calculs réglementaires Basel III (LCR, EVE, NII, CET1, IRRBB) avec dashboard interactif"
                         ],
                         en: [
-                            "Development of 6 specialized ALM agents (liquidity, solvency, profitability, risk, treasury)",
+                            "Development of 6 specialized AI agents (liquidity, solvency, profitability, risk, treasury)",
                             "Multi-LLM support with automatic fallback (xAI Grok-3, GPT-4, Claude, Mistral, DeepSeek)",
                             "Basel III regulatory calculations (LCR, EVE, NII, CET1, IRRBB) with interactive dashboard"
                         ]
@@ -304,29 +304,29 @@ const portfolioData = {
     // ========================================
     projects: [
         {
-            name: "AI Meeting & Audio Intelligence Platform",
+            name: "Transcription & Résumé Automatique de Réunions",
             description: {
                 fr: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT.",
                 en: "Application that converts audio files to text via AssemblyAI, then generates summaries or detailed explanations with GPT."
             },
             technologies: ["AssemblyAI", "Streamlit", "FPDF", "OpenAI GPT-4o"],
             category: "ai",
-            github: "",
+            github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/2-assembyai",
             demo: ""
         },
         {
-            name: "Intelligent Document Retrieval System (RAG)",
+            name: "Système Intelligent de Recherche dans des Documents (RAG)",
             description: {
                 fr: "Application qui extrait le contenu de PDFs publics via FireCrawl, puis permet de poser des questions sur le contenu extrait.",
                 en: "Application that extracts content from public PDFs via FireCrawl, then allows asking questions about the extracted content."
             },
             technologies: ["FireCrawl", "Agno", "Streamlit", "BeautifulSoup", "OpenAI GPT-4o"],
             category: "rag",
-            github: "",
+            github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/11-Notion_RAG",
             demo: ""
         },
         {
-            name: "No-Code Automation Hub",
+            name: "Plateforme d’Automatisation No-Code et Orchestration de Workflows",
             description: {
                 fr: "Workflow d'orchestration avec n8n et Airtable pour l'automatisation de processus métier.",
                 en: "Orchestration workflow with n8n and Airtable for business process automation."
@@ -337,36 +337,36 @@ const portfolioData = {
             demo: ""
         },
         {
-            name: "AI Legal Copilot",
+            name: "Assistant Juridique Intelligent pour l’Analyse de Contrats",
             description: {
                 fr: "Application pour l'analyse de documents juridiques avec Mistral OCR et recherche vectorielle FAISS.",
                 en: "Application for legal document analysis with Mistral OCR and FAISS vector search."
             },
             technologies: ["Mistral AI", "FAISS", "Mistral Embeddings", "Streamlit"],
             category: "rag",
-            github: "",
+            github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/8-mistral_OCR",
             demo: ""
         },
         {
-            name: "TaskBot AI",
+            name: "Gestion Intelligente de Tâches via WhatsApp",
             description: {
                 fr: "Bot WhatsApp qui gère une liste de tâches via l'API Todoist avec interactions intelligentes.",
                 en: "WhatsApp bot that manages a task list via the Todoist API with intelligent interactions."
             },
             technologies: ["FastAPI", "WhatsApp Business API", "Agno", "OpenAI GPT-4o", "Todoist API"],
             category: "chatbot",
-            github: "",
+            github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/16-Whatsapp/AI_TODO_List",
             demo: ""
         },
         {
-            name: "CompanionAI",
+            name: "Agent Conversationnel Intelligent et Persistant sur WhatsApp",
             description: {
                 fr: "Bot WhatsApp utilisant Letta comme agent compagnon persistant. Supporte les messages textes et images.",
                 en: "WhatsApp bot using Letta as a persistent companion agent. Supports text and image messages."
             },
             technologies: ["FastAPI", "WhatsApp Business API", "Letta Client", "Uvicorn"],
             category: "chatbot",
-            github: "",
+            github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/23-Whatsapp-lette/CompanionAgent",
             demo: ""
         }
     ],
