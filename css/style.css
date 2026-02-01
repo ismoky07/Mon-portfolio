@@ -467,11 +467,10 @@ button {
 }
 
 .hero-image img {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center 25%;
-    transform: scale(0.85);
+    object-position: center 20%;
 }
 
 .hero-floating-badge {
@@ -1500,11 +1499,37 @@ a.info-link:hover {
 
     .hero-visual {
         order: -1;
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+        display: flex;
+        justify-content: center;
+        padding: 40px 20px;
     }
 
     .hero-image-wrapper {
         width: 280px;
         height: 280px;
+        position: relative;
+    }
+
+    /* Repositionner les badges pour éviter le débordement */
+    .hero-floating-badge.badge-top {
+        left: auto;
+        right: -20px;
+        top: 20px;
+    }
+
+    .hero-floating-badge.badge-bottom {
+        right: -20px;
+        top: auto;
+        bottom: 50%;
+        margin-top: 0;
+    }
+
+    .hero-floating-badge.badge-left {
+        left: -20px;
+        bottom: 20px;
     }
 
     .about-content {
@@ -1570,6 +1595,48 @@ a.info-link:hover {
 
     .nav-cta {
         margin-left: 0;
+    }
+
+    /* Hero section mobile fixes */
+    .hero {
+        padding-top: 80px;
+        min-height: auto;
+    }
+
+    .hero-container {
+        padding: 20px 16px;
+        gap: 30px;
+    }
+
+    .hero-visual {
+        padding: 30px 40px;
+    }
+
+    .hero-image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-floating-badge {
+        padding: 8px 14px;
+        font-size: 0.75rem;
+    }
+
+    .hero-floating-badge.badge-top {
+        top: 5px;
+        right: -10px;
+        left: auto;
+    }
+
+    .hero-floating-badge.badge-bottom {
+        right: -10px;
+        top: 50%;
+        bottom: auto;
+    }
+
+    .hero-floating-badge.badge-left {
+        left: -10px;
+        bottom: 5px;
     }
 
     .hero-stats {
@@ -1642,13 +1709,39 @@ a.info-link:hover {
         font-size: 1.3rem;
     }
 
+    .hero-container {
+        padding: 16px 12px;
+        gap: 20px;
+    }
+
+    .hero-visual {
+        padding: 20px 10px;
+    }
+
     .hero-image-wrapper {
-        width: 220px;
-        height: 220px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero-image-border {
+        inset: -3px;
     }
 
     .hero-floating-badge {
         display: none;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        margin-bottom: 24px;
+    }
+
+    .stat-number {
+        font-size: 1.6rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
     }
 
     .section-title {
@@ -1660,6 +1753,10 @@ a.info-link:hover {
     .education-card,
     .contact-card {
         padding: 24px;
+    }
+
+    .container {
+        padding: 0 16px;
     }
 }
 
