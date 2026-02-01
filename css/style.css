@@ -1599,7 +1599,7 @@ a.info-link:hover {
 
     /* Hero section mobile fixes */
     .hero {
-        padding-top: 80px;
+        padding-top: 90px;
         min-height: auto;
     }
 
@@ -1609,12 +1609,13 @@ a.info-link:hover {
     }
 
     .hero-visual {
-        padding: 30px 40px;
+        padding: 10px 40px 30px 40px;
+        margin-top: 0;
     }
 
     .hero-image-wrapper {
-        width: 240px;
-        height: 240px;
+        width: 220px;
+        height: 220px;
     }
 
     .hero-floating-badge {
@@ -1710,17 +1711,17 @@ a.info-link:hover {
     }
 
     .hero-container {
-        padding: 16px 12px;
-        gap: 20px;
+        padding: 10px 12px;
+        gap: 15px;
     }
 
     .hero-visual {
-        padding: 20px 10px;
+        padding: 5px 10px 20px 10px;
     }
 
     .hero-image-wrapper {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 
     .hero-image-border {
