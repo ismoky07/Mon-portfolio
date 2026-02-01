@@ -77,6 +77,7 @@ const translations = {
             location: "Localisation",
             sendEmail: "Envoyer un email",
             call: "Appeler",
+            whatsapp: "Envoyer un message",
             findMe: "Retrouvez-moi sur les réseaux"
         },
 
@@ -176,6 +177,7 @@ const translations = {
             location: "Location",
             sendEmail: "Send an email",
             call: "Call",
+            whatsapp: "Send a message",
             findMe: "Find me on social networks"
         },
 
