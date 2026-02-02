@@ -57,7 +57,16 @@ const translations = {
             ai: "IA",
             rag: "RAG",
             chatbot: "Chatbot",
-            automation: "Automation"
+            automation: "Automation",
+            retraites: {
+                period: "Juillet 2025 - Janvier 2026"
+            },
+            immobilier: {
+                period: "Juillet 2025 - Janvier 2026"
+            },
+            alm: {
+                period: "Juillet 2025 - Janvier 2026"
+            }
         },
 
         // Education Section
@@ -157,7 +166,16 @@ const translations = {
             ai: "AI",
             rag: "RAG",
             chatbot: "Chatbot",
-            automation: "Automation"
+            automation: "Automation",
+            retraites: {
+                period: "July 2025 - January 2026"
+            },
+            immobilier: {
+                period: "July 2025 - January 2026"
+            },
+            alm: {
+                period: "July 2025 - January 2026"
+            }
         },
 
         // Education Section

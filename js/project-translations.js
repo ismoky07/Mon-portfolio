@@ -36,7 +36,7 @@ const projectTranslations = {
             retraites: {
                 title: "Système Intelligent de Gestion des Retraites",
                 subtitle: "Système multi-agents IA avec 4 modules spécialisés pour automatiser les processus métier d'une caisse de retraite",
-                period: "Juillet 2025 - Novembre 2025",
+                period: "Juillet 2025 - Janvier 2026",
                 context: "Développement d'un système intelligent d'entreprise pour une caisse de retraite souhaitant moderniser et automatiser ses processus métier. Le système intègre 4 modules spécialisés basés sur une architecture multi-agents, utilisant des modèles IA avancés (Claude 4, xAI Grok-3, AssemblyAI) pour traiter automatiquement les demandes des adhérents, générer des documents juridiques, gérer le support client et automatiser les comptes rendus de réunions.",
                 modules: "Les 4 Modules du Système",
                 module1: {
@@ -111,7 +111,7 @@ const projectTranslations = {
             immobilier: {
                 title: "Système Intelligent de Gestion Immobilière",
                 subtitle: "Plateforme intelligente d'IA pour la gestion immobilière avec 8 modules et 40 agents spécialisés pour automatiser le cycle complet de la gestion immobilière",
-                period: "Juillet 2025 - Novembre 2025",
+                period: "Juillet 2025 - Janvier 2026",
                 context: "Développement d'un système intelligent de gestion immobilier complet orchestrant 40 agents IA spécialisés répartis sur 8 modules métier. Cette plateforme enterprise-grade automatise l'intégralité du cycle immobilier : de l'évaluation des biens jusqu'à la gestion financière, en passant par la capture de leads, le marketing, les transactions, l'analyse de marché, la relation client et la gestion locative. Le système utilise une architecture multi-agents avec Agno Framework, des bases vectorielles PgVector pour la recherche sémantique, et plus de 100 outils personnalisés pour couvrir tous les aspects du métier.",
                 modules: "Les 8 Modules du Système",
                 module1: {
@@ -489,7 +489,7 @@ const projectTranslations = {
             alm: {
                 title: "ALM - Système de Gestion Actif-Passif",
                 subtitle: "Système multi-agents IA pour la gestion Actif-Passif bancaire avec 6 agents spécialisés, conformité Basel III et dashboard interactif",
-                period: "Juillet 2025 - Novembre 2025",
+                period: "Juillet 2025 - Janvier 2026",
                 context: "Développement d'un système complet de gestion Actif-Passif (ALM) propulsé par l'IA pour les institutions bancaires. Cette plateforme enterprise-grade orchestre 6 agents IA spécialisés pour automatiser l'évaluation des risques financiers, la gestion du capital, l'optimisation de la rentabilité et les opérations de trésorerie.",
                 agents: "Les 6 Agents Spécialisés",
                 agent1: {
@@ -618,7 +618,7 @@ const projectTranslations = {
             retraites: {
                 title: "Intelligent Retirement Management System",
                 subtitle: "Multi-agent AI system with 4 specialized modules to automate business processes for a retirement fund",
-                period: "July 2025 - November 2025",
+                period: "July 2025 - January 2026",
                 context: "Development of an enterprise intelligent system for a retirement fund looking to modernize and automate its business processes. The system integrates 4 specialized modules based on a multi-agent architecture, using advanced AI models (Claude 4, xAI Grok-3, AssemblyAI) to automatically process member requests, generate legal documents, manage customer support and automate meeting reports.",
                 modules: "The 4 System Modules",
                 module1: {
@@ -693,7 +693,7 @@ const projectTranslations = {
             immobilier: {
                 title: "Intelligent Real Estate Management System",
                 subtitle: "Intelligent AI platform for real estate management with 8 modules and 40 specialized agents to automate the complete real estate management cycle",
-                period: "July 2025 - November 2025",
+                period: "July 2025 - January 2026",
                 context: "Development of a complete intelligent real estate management system orchestrating 40 specialized AI agents across 8 business modules. This enterprise-grade platform automates the entire real estate cycle: from property valuation to financial management, including lead capture, marketing, transactions, market analysis, client relations and property management. The system uses a multi-agent architecture with Agno Framework, PgVector vector databases for semantic search, and over 100 custom tools to cover all business aspects.",
                 modules: "The 8 System Modules",
                 module1: {
@@ -1071,7 +1071,7 @@ const projectTranslations = {
             alm: {
                 title: "ALM - Asset Liability Management System",
                 subtitle: "Multi-agent AI system for bank Asset-Liability management with 6 specialized agents, Basel III compliance and interactive dashboard",
-                period: "July 2025 - November 2025",
+                period: "July 2025 - January 2026",
                 context: "Development of a comprehensive Asset-Liability Management (ALM) system powered by AI for banking institutions. This enterprise-grade platform orchestrates 6 specialized AI agents to automate financial risk assessment, capital management, profitability optimization and treasury operations.",
                 agents: "The 6 Specialized Agents",
                 agent1: {

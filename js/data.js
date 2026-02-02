@@ -119,8 +119,8 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             company: "TALENT PERFORMER",
             companyUrl: "https://www.talentperformer.com/",
             period: {
-                fr: "Juillet 2025 - Novembre 2025",
-                en: "July 2025 - November 2025"
+                fr: "Juillet 2025 - Janvier 2026",
+                en: "July 2025 - January 2026"
             },
             projects: [
                 {
