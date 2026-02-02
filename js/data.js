@@ -181,7 +181,7 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
                         en: "Intelligent Asset Liability Management System"
                     },
                     projectUrl: "projects/alm-finance.html",
-                    githubUrl: "https://github.com/ismoky07/FinanceOS/tree/main/Finance%20Modules/ALM",
+                    githubUrl: "https://github.com/ismoky07/ALM_Platform",
                     context: {
                         fr: "Système multi-agents IA pour la gestion Actif-Passif bancaire avec conformité Basel III.",
                         en: "Multi-agent AI system for bank Asset Liability Management with Basel III compliance."
