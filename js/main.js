@@ -272,6 +272,12 @@ function loadExperiences() {
                         <div class="project-technologies">
                             ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                         </div>
+                        ${project.projectUrl ? `
+                            <div class="project-detail-link">
+                                <span>${t('projects.viewDetails')}</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        ` : ''}
                     </div>
                 `).join('')}
             </div>
