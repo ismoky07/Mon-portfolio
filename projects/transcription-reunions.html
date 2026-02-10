@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcription & Résumé Automatique de Réunions - Ismael OUATTARA</title>
+    <meta name="description" content="Application de transcription audio et résumé automatique de réunions avec AssemblyAI et GPT-4o">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=21">
+    <link rel="stylesheet" href="../css/project-detail.css?v=4">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#projects" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects" data-i18n="projects.transcription.breadcrumb">Réalisations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span data-i18n="projects.transcription.breadcrumbProject">Transcription Réunions</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.transcription.title">Transcription & Résumé Automatique de Réunions</h1>
+            <p class="project-subtitle" data-i18n="projects.transcription.subtitle">Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT-4o</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-layer-group"></i>
+                    <span data-i18n="projects.transcription.category">IA Générative</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span data-i18n="projects.transcription.type">Projet Personnel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.transcription.context">
+                            Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT-4o.
+                            L'interface Streamlit permet d'uploader un fichier audio, de lancer la transcription et d'obtenir un résumé structuré exportable en PDF.
+                            Le système supporte plusieurs formats audio et détecte automatiquement la langue pour une transcription optimale.
+                        </p>
+                    </div>
+
+                    <!-- Fonctionnalités -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-list-check"></i> <span data-i18n="projects.transcription.features">Fonctionnalités</span></h2>
+
+                        <!-- Upload & Transcription -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-microphone-alt"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.transcription.module1.title">Upload & Transcription Audio</h3>
+                                    <span class="module-subtitle" data-i18n="projects.transcription.module1.subtitle">Conversion automatique de l'audio en texte</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.transcription.module1.item1">Upload fichiers audio (MP3, WAV, M4A)</li>
+                                    <li data-i18n="projects.transcription.module1.item2">Transcription automatique via AssemblyAI avec détection de langue et horodatage</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Résumé Intelligent -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-brain"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.transcription.module2.title">Résumé Intelligent</h3>
+                                    <span class="module-subtitle" data-i18n="projects.transcription.module2.subtitle">Génération de résumés via GPT-4o</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.transcription.module2.item1">Génération de résumés structurés via GPT-4o</li>
+                                    <li data-i18n="projects.transcription.module2.item2">Choix du niveau de détail (résumé concis, résumé détaillé, explication complète)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Export PDF -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-file-pdf"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.transcription.module3.title">Export PDF</h3>
+                                    <span class="module-subtitle" data-i18n="projects.transcription.module3.subtitle">Génération de documents PDF professionnels</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.transcription.module3.item1">Génération de documents PDF professionnels avec FPDF</li>
+                                    <li data-i18n="projects.transcription.module3.item2">Inclusion de la transcription complète et du résumé</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Architecture Technique -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cogs"></i> <span data-i18n="projects.transcription.technicalArch">Architecture Technique</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.transcription.arch1.title">Transcription Audio</h3>
+                                <p data-i18n="projects.transcription.arch1.desc">
+                                    AssemblyAI pour la transcription speech-to-text avec support multilingue et détection automatique de la langue.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.transcription.arch2.title">Traitement LLM</h3>
+                                <p data-i18n="projects.transcription.arch2.desc">
+                                    OpenAI GPT-4o pour l'analyse du texte transcrit et génération de résumés intelligents avec prompts spécialisés.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.transcription.arch3.title">Interface Utilisateur</h3>
+                                <p data-i18n="projects.transcription.arch3.desc">
+                                    Streamlit pour une interface web intuitive avec upload de fichiers, affichage en temps réel et téléchargement des résultats.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">AssemblyAI</span>
+                            <span class="tech-tag">OpenAI GPT-4o</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">FPDF</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.transcription.feature1">Transcription audio automatique</li>
+                            <li data-i18n="projects.transcription.feature2">Support multilingue</li>
+                            <li data-i18n="projects.transcription.feature3">Résumés multi-niveaux</li>
+                            <li data-i18n="projects.transcription.feature4">Export PDF professionnel</li>
+                            <li data-i18n="projects.transcription.feature5">Interface intuitive Streamlit</li>
+                            <li data-i18n="projects.transcription.feature6">Détection automatique de langue</li>
+                        </ul>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.transcription.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07/Talent-Performer-Projects/tree/main/2-assembyai" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.transcription.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <div class="nav-project prev disabled">
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </div>
+                <a href="recherche-documents-rag.html" class="nav-project next">
+                    <span data-i18n="project.next">Projet suivant</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=6"></script>
+    <script src="../js/project-translations.js?v=6"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>

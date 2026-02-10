@@ -286,29 +286,35 @@ function loadProjects() {
     const projectsGrid = document.getElementById('projects-grid');
 
     projectsGrid.innerHTML = portfolioData.projects.map(project => `
-        <div class="project-item fade-in" data-category="${project.category}">
+        <div class="project-item fade-in${project.projectUrl ? ' clickable' : ''}" data-category="${project.category}" ${project.projectUrl ? `onclick="window.location.href='${project.projectUrl}'"` : ''}>
             <div class="project-item-header">
                 <div class="project-item-icon">
                     <i class="${getProjectIcon(project.category)}"></i>
                 </div>
                 <div class="project-links">
                     ${project.github ? `
-                        <a href="${project.github}" class="project-link" target="_blank" title="GitHub">
+                        <a href="${project.github}" class="project-link" target="_blank" title="GitHub" onclick="event.stopPropagation()">
                             <i class="fab fa-github"></i>
                         </a>
                     ` : ''}
                     ${project.demo ? `
-                        <a href="${project.demo}" class="project-link" target="_blank" title="Demo">
+                        <a href="${project.demo}" class="project-link" target="_blank" title="Demo" onclick="event.stopPropagation()">
                             <i class="fas fa-external-link-alt"></i>
                         </a>
                     ` : ''}
                 </div>
             </div>
-            <h3>${project.name}</h3>
+            <h3>${getLocalizedValue(project.name, currentLanguage)}</h3>
             <p>${getLocalizedValue(project.description, currentLanguage)}</p>
             <div class="project-item-tech">
                 ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
             </div>
+            ${project.projectUrl ? `
+                <div class="project-detail-link">
+                    <span>${t('projects.viewDetails')}</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            ` : ''}
         </div>
     `).join('');
 }

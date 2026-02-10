@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot RAG Hybride - Assistant IA Base de Données - Ismael OUATTARA</title>
+    <meta name="description" content="Assistant IA full-stack Text-to-SQL avec pipeline 6 agents, RAG hybride, sécurité RBAC et interface React">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=22">
+    <link rel="stylesheet" href="../css/project-detail.css?v=4">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#projects" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects">Réalisations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Chatbot RAG Hybride</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.chatbotRag.title">Chatbot RAG Hybride - Assistant IA pour Base de Données</h1>
+            <p class="project-subtitle" data-i18n="projects.chatbotRag.subtitle">Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL via un pipeline de 6 agents orchestrés, RAG hybride et sécurité RBAC 4 couches</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-layer-group"></i>
+                    <span data-i18n="projects.chatbotRag.category">RAG</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span data-i18n="projects.chatbotRag.personalProject">Projet Personnel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.chatbotRag.context">
+                            Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL, les exécute sur une base PostgreSQL et retourne des réponses en français.
+                            Le système utilise un pipeline de 6 agents IA orchestrés via Agno Workflow, un RAG hybride (PgVector + SentenceTransformers) pour la récupération du schéma,
+                            une sécurité multi-couches RBAC avec 140+ patterns de guardrails, et une interface React 19 avec thème sombre/clair.
+                            Déployé via Docker Compose avec 3 services (PostgreSQL, FastAPI, React + Nginx).
+                        </p>
+                    </div>
+
+                    <!-- Pipeline 6 Agents -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cubes"></i> <span data-i18n="projects.chatbotRag.pipeline">Pipeline Text-to-SQL (6 Agents)</span></h2>
+
+                        <!-- Step 1: Intent Analysis -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-search"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.chatbotRag.step1.title">Agent 1 : Analyse d'Intention</h3>
+                                    <span class="module-subtitle" data-i18n="projects.chatbotRag.step1.subtitle">Compréhension de la question en langage naturel</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.chatbotRag.step1.item1">Analyse des entités, contraintes et relations dans la question</li>
+                                    <li data-i18n="projects.chatbotRag.step1.item2">Support de la mémoire conversationnelle pour les questions de suivi</li>
+                                    <li data-i18n="projects.chatbotRag.step1.item3">Détection d'intention structurée (filtrage, agrégation, jointure)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: RAG Schema -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-database"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.chatbotRag.step2.title">Agent 2 : Récupération RAG du Schéma</h3>
+                                    <span class="module-subtitle" data-i18n="projects.chatbotRag.step2.subtitle">Recherche hybride vectorielle + mot-clé</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.chatbotRag.step2.item1">Recherche hybride dans PgVector avec embeddings SentenceTransformers</li>
+                                    <li data-i18n="projects.chatbotRag.step2.item2">Récupération du contexte schéma, relations et règles métier</li>
+                                    <li data-i18n="projects.chatbotRag.step2.item3">Knowledge base de 7 documents indexés sémantiquement</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: SQL Generation -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-code"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.chatbotRag.step3.title">Agent 3 : Génération SQL</h3>
+                                    <span class="module-subtitle" data-i18n="projects.chatbotRag.step3.subtitle">Création de requêtes PostgreSQL sécurisées</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.chatbotRag.step3.item1">Génération de requêtes SELECT PostgreSQL via Mistral Large</li>
+                                    <li data-i18n="projects.chatbotRag.step3.item2">Instructions dynamiques limitées aux tables autorisées (RBAC)</li>
+                                    <li data-i18n="projects.chatbotRag.step3.item3">Utilisation du contexte schéma et des règles métier du RAG</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Security Validation -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-shield-alt"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.chatbotRag.step4.title">Agent 4 : Validation Sécurité SQL</h3>
+                                    <span class="module-subtitle" data-i18n="projects.chatbotRag.step4.subtitle">Double vérification agent + regex</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.chatbotRag.step4.item1">Validation par agent IA (détection commandes destructives)</li>
+                                    <li data-i18n="projects.chatbotRag.step4.item2">Vérification regex (extraction FROM/JOIN) contre tables autorisées</li>
+                                    <li data-i18n="projects.chatbotRag.step4.item3">Blocage des accès non autorisés aux tables</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 5: DB Execution -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-play-circle"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.chatbotRag.step5.title">Agent 5 : Exécution Base de Données</h3>
+                                    <span class="module-subtitle" data-i18n="projects.chatbotRag.step5.subtitle">Requête en mode lecture seule</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.chatbotRag.step5.item1">Exécution sur connexion PostgreSQL en mode read-only</li>
+                                    <li data-i18n="projects.chatbotRag.step5.item2">Retour des résultats en format JSON (colonnes + lignes)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Step 6: Response Formatting -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-comment-dots"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.chatbotRag.step6.title">Agent 6 : Formatage de la Réponse</h3>
+                                    <span class="module-subtitle" data-i18n="projects.chatbotRag.step6.subtitle">Réponse en français avec tableaux Markdown</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.chatbotRag.step6.item1">Reformulation des résultats SQL en langage naturel français</li>
+                                    <li data-i18n="projects.chatbotRag.step6.item2">Tableaux Markdown, formatage monétaire et masquage données sensibles</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sécurité -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-lock"></i> <span data-i18n="projects.chatbotRag.securityTitle">Sécurité Multi-Couches</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.chatbotRag.rbac.title">RBAC 4 Couches</h3>
+                                <p data-i18n="projects.chatbotRag.rbac.desc">
+                                    Contrôle d'accès basé sur les rôles à 4 niveaux : détection de mots-clés dans la question, instructions dynamiques de génération SQL,
+                                    validation par agent IA, et vérification regex des tables FROM/JOIN. Chaque utilisateur a des tables autorisées configurables par l'admin.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.chatbotRag.guardrails.title">Guardrails (140+ patterns)</h3>
+                                <p data-i18n="projects.chatbotRag.guardrails.desc">
+                                    4 catégories de protection : hors-sujet (~80 patterns), injection SQL (~30 patterns), injection de prompt (~25 patterns),
+                                    et sécurité de sortie (masquage emails/téléphones). Authentification JWT avec validation mot de passe robuste et hachage bcrypt.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Architecture Technique -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cogs"></i> <span data-i18n="projects.chatbotRag.technicalArch">Architecture Technique</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.chatbotRag.arch1.title">Backend FastAPI</h3>
+                                <p data-i18n="projects.chatbotRag.arch1.desc">
+                                    API REST FastAPI avec Uvicorn, authentification JWT, routes protégées par rôle (admin/user),
+                                    pipeline de 6 agents orchestrés via Agno Workflow, et historique des conversations en base.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.chatbotRag.arch2.title">RAG Hybride & IA</h3>
+                                <p data-i18n="projects.chatbotRag.arch2.desc">
+                                    Mistral Large comme LLM principal via Agno. PgVector pour la recherche sémantique hybride avec embeddings SentenceTransformers (all-MiniLM-L6-v2).
+                                    Knowledge base de 7 documents Markdown indexés avec chunking sémantique via Chonkie.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.chatbotRag.arch3.title">Frontend React 19</h3>
+                                <p data-i18n="projects.chatbotRag.arch3.desc">
+                                    SPA React 19 + TypeScript avec Vite. Interface chat, panneau admin, historique, vue SQL, export CSV,
+                                    thème sombre/clair. Déployé via Nginx en multi-stage Docker build.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.chatbotRag.arch4.title">Infrastructure Docker</h3>
+                                <p data-i18n="projects.chatbotRag.arch4.desc">
+                                    Docker Compose orchestrant 3 services : PostgreSQL 17 + PgVector, FastAPI backend, React + Nginx frontend.
+                                    Base de données avec 3 tables métier (clients, produits, commandes) et tables système (users, history, vectors).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Résultats -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-chart-line"></i> <span data-i18n="projects.chatbotRag.metricsTitle">Métriques du Système</span></h2>
+                        <div class="results-grid">
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.chatbotRag.metric1.value">6</div>
+                                <div class="result-label" data-i18n="projects.chatbotRag.metric1.label">Agents IA orchestrés</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.chatbotRag.metric2.value">4</div>
+                                <div class="result-label" data-i18n="projects.chatbotRag.metric2.label">Couches de sécurité RBAC</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.chatbotRag.metric3.value">140+</div>
+                                <div class="result-label" data-i18n="projects.chatbotRag.metric3.label">Patterns de guardrails</div>
+                            </div>
+                            <div class="result-card">
+                                <div class="result-value" data-i18n="projects.chatbotRag.metric4.value">3</div>
+                                <div class="result-label" data-i18n="projects.chatbotRag.metric4.label">Services Docker</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">React 19</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Mistral AI</span>
+                            <span class="tech-tag">Agno Workflow</span>
+                            <span class="tech-tag">PgVector</span>
+                            <span class="tech-tag">SentenceTransformers</span>
+                            <span class="tech-tag">PostgreSQL 17</span>
+                            <span class="tech-tag">Docker Compose</span>
+                            <span class="tech-tag">Nginx</span>
+                            <span class="tech-tag">JWT / bcrypt</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Vite</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.chatbotRag.feature1">Pipeline 6 agents Text-to-SQL</li>
+                            <li data-i18n="projects.chatbotRag.feature2">RAG hybride (vecteur + mot-clé)</li>
+                            <li data-i18n="projects.chatbotRag.feature3">RBAC 4 couches de sécurité</li>
+                            <li data-i18n="projects.chatbotRag.feature4">140+ guardrails patterns</li>
+                            <li data-i18n="projects.chatbotRag.feature5">Mémoire conversationnelle</li>
+                            <li data-i18n="projects.chatbotRag.feature6">Interface React dark/light</li>
+                            <li data-i18n="projects.chatbotRag.feature7">Panneau admin RBAC</li>
+                            <li data-i18n="projects.chatbotRag.feature8">Export CSV & vue SQL</li>
+                            <li data-i18n="projects.chatbotRag.feature9">Déploiement Docker Compose</li>
+                        </ul>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.chatbotRag.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07/RAG_text_to_sql" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.chatbotRag.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="agent-whatsapp.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </a>
+                <div class="nav-project next disabled">
+                    <span data-i18n="project.next">Projet suivant</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=6"></script>
+    <script src="../js/project-translations.js?v=6"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>

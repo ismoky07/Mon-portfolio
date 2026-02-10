@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant Juridique Intelligent - Ismael OUATTARA</title>
+    <meta name="description" content="Application d'analyse de documents juridiques avec Mistral OCR et recherche vectorielle FAISS">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css?v=21">
+    <link rel="stylesheet" href="../css/project-detail.css?v=4">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <span class="logo-text">IO</span>
+            </a>
+            <div class="nav-back">
+                <a href="../index.html#projects" class="back-link">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.back">Retour au portfolio</span>
+                </a>
+            </div>
+            <!-- Language Switcher -->
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
+                <button class="lang-btn" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-breadcrumb">
+                <a href="../index.html">Portfolio</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="../index.html#projects">Réalisations</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Assistant Juridique</span>
+            </div>
+            <h1 class="project-title" data-i18n="projects.juridique.title">Assistant Juridique Intelligent pour l'Analyse de Contrats</h1>
+            <p class="project-subtitle" data-i18n="projects.juridique.subtitle">Analyse de documents juridiques avec Mistral OCR et recherche vectorielle FAISS</p>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-layer-group"></i>
+                    <span data-i18n="projects.juridique.category">RAG</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span data-i18n="projects.juridique.personalProject">Projet Personnel</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Main Content -->
+                <div class="main-content">
+                    <!-- Description -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
+                        <p data-i18n="projects.juridique.context">
+                            Application d'analyse de documents juridiques combinant l'OCR de Mistral AI pour l'extraction de texte depuis des documents scannés et une base vectorielle FAISS avec Mistral Embeddings pour la recherche sémantique. Permet d'interroger le contenu des contrats en langage naturel et d'obtenir des analyses contextualisées.
+                        </p>
+                    </div>
+
+                    <!-- Pipeline d'Analyse -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cubes"></i> <span data-i18n="projects.juridique.pipeline">Pipeline d'Analyse</span></h2>
+
+                        <!-- OCR & Extraction -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-file-alt"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.juridique.feature_ocr.title">OCR & Extraction</h3>
+                                    <span class="module-subtitle" data-i18n="projects.juridique.feature_ocr.subtitle">Extraction de texte depuis documents scannés</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.juridique.feature_ocr.item1">Extraction via Mistral OCR (PDF et images)</li>
+                                    <li data-i18n="projects.juridique.feature_ocr.item2">Nettoyage et structuration du contenu</li>
+                                    <li data-i18n="projects.juridique.feature_ocr.item3">Préservation de la structure documentaire</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Indexation FAISS -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-database"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.juridique.feature_index.title">Indexation Vectorielle FAISS</h3>
+                                    <span class="module-subtitle" data-i18n="projects.juridique.feature_index.subtitle">Recherche par similarité ultra-rapide</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.juridique.feature_index.item1">Chunking des documents juridiques</li>
+                                    <li data-i18n="projects.juridique.feature_index.item2">Embeddings via Mistral Embeddings</li>
+                                    <li data-i18n="projects.juridique.feature_index.item3">Indexation FAISS en mémoire</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Analyse Juridique -->
+                        <div class="module-card">
+                            <div class="module-header">
+                                <div class="module-icon"><i class="fas fa-balance-scale"></i></div>
+                                <div class="module-title">
+                                    <h3 data-i18n="projects.juridique.feature_analysis.title">Analyse Juridique IA</h3>
+                                    <span class="module-subtitle" data-i18n="projects.juridique.feature_analysis.subtitle">Questions-réponses sur les contrats</span>
+                                </div>
+                            </div>
+                            <div class="module-content">
+                                <ul>
+                                    <li data-i18n="projects.juridique.feature_analysis.item1">Questions en langage naturel sur les contrats</li>
+                                    <li data-i18n="projects.juridique.feature_analysis.item2">Réponses contextualisées par Mistral AI</li>
+                                    <li data-i18n="projects.juridique.feature_analysis.item3">Basé sur les passages les plus pertinents</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Architecture Technique -->
+                    <div class="content-section">
+                        <h2><i class="fas fa-cogs"></i> <span data-i18n="projects.juridique.technicalArch">Architecture Technique</span></h2>
+                        <div class="technical-details">
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.juridique.arch1.title">OCR Mistral</h3>
+                                <p data-i18n="projects.juridique.arch1.desc">
+                                    Mistral OCR pour l'extraction de haute qualité du texte depuis documents scannés avec préservation de la structure.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.juridique.arch2.title">Recherche Vectorielle</h3>
+                                <p data-i18n="projects.juridique.arch2.desc">
+                                    FAISS (Facebook AI Similarity Search) pour l'indexation et la recherche vectorielle rapide avec Mistral Embeddings pour la représentation sémantique.
+                                </p>
+                            </div>
+                            <div class="detail-item">
+                                <h3 data-i18n="projects.juridique.arch3.title">Interface</h3>
+                                <p data-i18n="projects.juridique.arch3.desc">
+                                    Streamlit pour l'interface utilisateur avec upload de documents, visualisation des résultats et chat interactif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <!-- Technologies -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Mistral AI</span>
+                            <span class="tech-tag">Mistral OCR</span>
+                            <span class="tech-tag">FAISS</span>
+                            <span class="tech-tag">Mistral Embeddings</span>
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Python</span>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="sidebar-section">
+                        <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
+                        <ul class="features-list">
+                            <li data-i18n="projects.juridique.feature1">OCR Mistral haute qualité</li>
+                            <li data-i18n="projects.juridique.feature2">Recherche vectorielle FAISS</li>
+                            <li data-i18n="projects.juridique.feature3">Analyse juridique IA</li>
+                            <li data-i18n="projects.juridique.feature4">Chat contextuel</li>
+                            <li data-i18n="projects.juridique.feature5">Interface Streamlit</li>
+                            <li data-i18n="projects.juridique.feature6">Support PDF et images</li>
+                        </ul>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="sidebar-section">
+                        <h3><i class="fab fa-github"></i> <span data-i18n="projects.juridique.sourceCode">Code Source</span></h3>
+                        <a href="https://github.com/ismoky07/Talent-Performer-Projects/tree/main/8-mistral_OCR" target="_blank" class="github-link-box">
+                            <i class="fab fa-github"></i>
+                            <span data-i18n="projects.juridique.viewGithub">Voir sur GitHub</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="automatisation-workflows.html" class="nav-project prev">
+                    <i class="fas fa-arrow-left"></i>
+                    <span data-i18n="project.prev">Projet précédent</span>
+                </a>
+                <a href="gestion-taches-whatsapp.html" class="nav-project next">
+                    <span data-i18n="project.next">Projet suivant</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">IO</span>
+                    <p>AI Engineer - Spécialisé en IA Générative</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2025</span> Ismael OUATTARA. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/translations.js?v=6"></script>
+    <script src="../js/project-translations.js?v=6"></script>
+    <script src="../js/project-detail.js?v=2"></script>
+</body>
+</html>

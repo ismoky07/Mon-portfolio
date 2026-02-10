@@ -304,7 +304,10 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
     // ========================================
     projects: [
         {
-            name: "Transcription & Résumé Automatique de Réunions",
+            name: {
+                fr: "Transcription & Résumé Automatique de Réunions",
+                en: "Automatic Meeting Transcription & Summary"
+            },
             description: {
                 fr: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT.",
                 en: "Application that converts audio files to text via AssemblyAI, then generates summaries or detailed explanations with GPT."
@@ -312,10 +315,14 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             technologies: ["AssemblyAI", "Streamlit", "FPDF", "OpenAI GPT-4o"],
             category: "ai",
             github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/2-assembyai",
-            demo: ""
+            demo: "",
+            projectUrl: "projects/transcription-reunions.html"
         },
         {
-            name: "Système Intelligent de Recherche dans des Documents (RAG)",
+            name: {
+                fr: "Système Intelligent de Recherche dans des Documents (RAG)",
+                en: "Intelligent Document Search System (RAG)"
+            },
             description: {
                 fr: "Application qui extrait le contenu de PDFs publics via FireCrawl, puis permet de poser des questions sur le contenu extrait.",
                 en: "Application that extracts content from public PDFs via FireCrawl, then allows asking questions about the extracted content."
@@ -323,10 +330,14 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             technologies: ["FireCrawl", "Agno", "Streamlit", "BeautifulSoup", "OpenAI GPT-4o"],
             category: "rag",
             github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/11-Notion_RAG",
-            demo: ""
+            demo: "",
+            projectUrl: "projects/recherche-documents-rag.html"
         },
         {
-            name: "Plateforme d’Automatisation No-Code et Orchestration de Workflows",
+            name: {
+                fr: "Plateforme d'Automatisation No-Code et Orchestration de Workflows",
+                en: "No-Code Automation Platform & Workflow Orchestration"
+            },
             description: {
                 fr: "Workflow d'orchestration avec n8n et Airtable pour l'automatisation de processus métier.",
                 en: "Orchestration workflow with n8n and Airtable for business process automation."
@@ -334,10 +345,14 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             technologies: ["n8n", "Airtable"],
             category: "automation",
             github: "",
-            demo: ""
+            demo: "",
+            projectUrl: "projects/automatisation-workflows.html"
         },
         {
-            name: "Assistant Juridique Intelligent pour l’Analyse de Contrats",
+            name: {
+                fr: "Assistant Juridique Intelligent pour l'Analyse de Contrats",
+                en: "Intelligent Legal Assistant for Contract Analysis"
+            },
             description: {
                 fr: "Application pour l'analyse de documents juridiques avec Mistral OCR et recherche vectorielle FAISS.",
                 en: "Application for legal document analysis with Mistral OCR and FAISS vector search."
@@ -345,10 +360,14 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             technologies: ["Mistral AI", "FAISS", "Mistral Embeddings", "Streamlit"],
             category: "rag",
             github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/8-mistral_OCR",
-            demo: ""
+            demo: "",
+            projectUrl: "projects/assistant-juridique.html"
         },
         {
-            name: "Gestion Intelligente de Tâches via WhatsApp",
+            name: {
+                fr: "Gestion Intelligente de Tâches via WhatsApp",
+                en: "Intelligent Task Management via WhatsApp"
+            },
             description: {
                 fr: "Bot WhatsApp qui gère une liste de tâches via l'API Todoist avec interactions intelligentes.",
                 en: "WhatsApp bot that manages a task list via the Todoist API with intelligent interactions."
@@ -356,10 +375,14 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             technologies: ["FastAPI", "WhatsApp Business API", "Agno", "OpenAI GPT-4o", "Todoist API"],
             category: "chatbot",
             github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/16-Whatsapp/AI_TODO_List",
-            demo: ""
+            demo: "",
+            projectUrl: "projects/gestion-taches-whatsapp.html"
         },
         {
-            name: "Agent Conversationnel Intelligent et Persistant sur WhatsApp",
+            name: {
+                fr: "Agent Conversationnel Intelligent et Persistant sur WhatsApp",
+                en: "Intelligent Persistent Conversational Agent on WhatsApp"
+            },
             description: {
                 fr: "Bot WhatsApp utilisant Letta comme agent compagnon persistant. Supporte les messages textes et images.",
                 en: "WhatsApp bot using Letta as a persistent companion agent. Supports text and image messages."
@@ -367,7 +390,23 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             technologies: ["FastAPI", "WhatsApp Business API", "Letta Client", "Uvicorn"],
             category: "chatbot",
             github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/23-Whatsapp-lette/CompanionAgent",
-            demo: ""
+            demo: "",
+            projectUrl: "projects/agent-whatsapp.html"
+        },
+        {
+            name: {
+                fr: "Chatbot RAG Hybride - Assistant IA pour Base de Données",
+                en: "Hybrid RAG Chatbot - AI Database Assistant"
+            },
+            description: {
+                fr: "Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL via un pipeline de 6 agents orchestrés, RAG hybride, sécurité RBAC 4 couches et interface React.",
+                en: "Full-stack AI assistant that transforms natural language questions into SQL queries via a 6-agent orchestrated pipeline, hybrid RAG, 4-layer RBAC security and React interface."
+            },
+            technologies: ["FastAPI", "React", "Mistral AI", "Agno", "PgVector", "PostgreSQL", "Docker", "SentenceTransformers"],
+            category: "rag",
+            github: "https://github.com/ismoky07/RAG_text_to_sql",
+            demo: "",
+            projectUrl: "projects/chatbot-rag-hybride.html"
         }
     ],
 

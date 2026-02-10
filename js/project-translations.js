@@ -28,7 +28,9 @@ const projectTranslations = {
             prev: "Projet précédent",
             next: "Projet suivant",
             noPrev: "Projet précédent",
-            noNext: "Projet suivant"
+            noNext: "Projet suivant",
+            personalProject: "Projet Personnel",
+            category: "Catégorie"
         },
 
         // Gestion des Retraites
@@ -581,6 +583,404 @@ const projectTranslations = {
                 standard4: "Stress Testing Standards",
                 sourceCode: "Code Source",
                 viewGithub: "Voir sur GitHub"
+            },
+
+            // ========================================
+            // PROJETS PERSONNELS
+            // ========================================
+
+            transcription: {
+                title: "Transcription & Résumé Automatique de Réunions",
+                subtitle: "Application de transcription audio et génération de résumés intelligents avec AssemblyAI et GPT-4o",
+                category: "IA Générative",
+                personalProject: "Projet Personnel",
+                context: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT-4o. L'interface Streamlit permet d'uploader un fichier audio, de lancer la transcription et d'obtenir un résumé structuré exportable en PDF via FPDF.",
+                features: "Fonctionnalités",
+                feature_upload: {
+                    title: "Upload & Transcription Audio",
+                    subtitle: "Conversion automatique de l'audio en texte",
+                    item1: "Upload de fichiers audio (MP3, WAV, M4A)",
+                    item2: "Transcription automatique via AssemblyAI",
+                    item3: "Détection de langue et horodatage"
+                },
+                feature_summary: {
+                    title: "Résumé Intelligent",
+                    subtitle: "Analyse et synthèse par GPT-4o",
+                    item1: "Génération de résumés structurés via GPT-4o",
+                    item2: "Choix du niveau de détail (concis, détaillé, complet)",
+                    item3: "Explications détaillées sur demande"
+                },
+                feature_export: {
+                    title: "Export PDF",
+                    subtitle: "Documents professionnels générés",
+                    item1: "Génération de documents PDF avec FPDF",
+                    item2: "Transcription complète et résumé inclus",
+                    item3: "Mise en page professionnelle"
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "Transcription Audio",
+                    desc: "AssemblyAI pour la transcription speech-to-text avec support multilingue et détection automatique de la langue."
+                },
+                arch2: {
+                    title: "Traitement LLM",
+                    desc: "OpenAI GPT-4o pour l'analyse du texte transcrit et génération de résumés intelligents avec prompts spécialisés."
+                },
+                arch3: {
+                    title: "Interface Utilisateur",
+                    desc: "Streamlit pour une interface web intuitive avec upload de fichiers, affichage en temps réel et téléchargement des résultats."
+                },
+                feature1: "Transcription audio automatique",
+                feature2: "Support multilingue",
+                feature3: "Résumés multi-niveaux",
+                feature4: "Export PDF professionnel",
+                feature5: "Interface intuitive Streamlit",
+                feature6: "Détection automatique de langue",
+                sourceCode: "Code Source",
+                viewGithub: "Voir sur GitHub"
+            },
+
+            ragSearch: {
+                title: "Système Intelligent de Recherche dans des Documents (RAG)",
+                subtitle: "Application RAG pour l'extraction et l'interrogation de documents web via FireCrawl et GPT-4o",
+                category: "RAG",
+                personalProject: "Projet Personnel",
+                context: "Application de Retrieval-Augmented Generation (RAG) qui extrait le contenu de pages web et PDFs publics via FireCrawl, indexe le contenu dans une base vectorielle, puis permet de poser des questions en langage naturel sur le contenu extrait avec des réponses contextualisées via GPT-4o.",
+                pipeline: "Pipeline RAG",
+                feature_extract: {
+                    title: "Extraction de Contenu",
+                    subtitle: "Crawling et parsing web intelligent",
+                    item1: "Crawling et extraction via FireCrawl",
+                    item2: "Parsing HTML via BeautifulSoup",
+                    item3: "Nettoyage et structuration des données"
+                },
+                feature_index: {
+                    title: "Indexation Vectorielle",
+                    subtitle: "Recherche par similarité sémantique",
+                    item1: "Chunking sémantique des documents",
+                    item2: "Indexation vectorielle via l'agent Agno",
+                    item3: "Recherche par similarité rapide"
+                },
+                feature_qa: {
+                    title: "Question-Réponse Contextuel",
+                    subtitle: "Chat intelligent sur les documents",
+                    item1: "Questions en langage naturel",
+                    item2: "Réponses contextualisées par GPT-4o",
+                    item3: "Basé sur les passages les plus pertinents"
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "Extraction & Parsing",
+                    desc: "FireCrawl pour le crawling web intelligent et BeautifulSoup pour le parsing HTML et nettoyage du contenu extrait."
+                },
+                arch2: {
+                    title: "Framework Agent",
+                    desc: "Agno pour l'orchestration de l'agent RAG avec gestion du contexte et des embeddings vectoriels."
+                },
+                arch3: {
+                    title: "Génération",
+                    desc: "OpenAI GPT-4o pour la génération de réponses contextualisées à partir des chunks les plus pertinents."
+                },
+                feature1: "Extraction web intelligente",
+                feature2: "Pipeline RAG complet",
+                feature3: "Recherche sémantique",
+                feature4: "Chat contextuel",
+                feature5: "Interface Streamlit",
+                feature6: "Support multi-documents",
+                sourceCode: "Code Source",
+                viewGithub: "Voir sur GitHub"
+            },
+
+            noCode: {
+                title: "Plateforme d'Automatisation No-Code et Orchestration de Workflows",
+                subtitle: "Orchestration de workflows métier avec n8n et Airtable pour l'automatisation sans code",
+                category: "Automation",
+                personalProject: "Projet Personnel",
+                context: "Plateforme d'automatisation no-code utilisant n8n comme moteur d'orchestration de workflows et Airtable comme base de données relationnelle. Le système permet de concevoir, exécuter et monitorer des workflows métier complexes sans écriture de code, avec des intégrations multiples et des déclencheurs automatisés.",
+                features: "Fonctionnalités",
+                feature_workflow: {
+                    title: "Orchestration de Workflows n8n",
+                    subtitle: "Conception visuelle de workflows",
+                    item1: "Conception visuelle de workflows complexes",
+                    item2: "Conditions, boucles, parallélisme et gestion d'erreurs",
+                    item3: "Déclencheurs automatisés (webhooks, cron, événements)"
+                },
+                feature_data: {
+                    title: "Gestion de Données Airtable",
+                    subtitle: "Base de données relationnelle flexible",
+                    item1: "Base de données relationnelle comme backend",
+                    item2: "Vues personnalisées et formulaires de saisie",
+                    item3: "Automatisations natives Airtable"
+                },
+                feature_integration: {
+                    title: "Intégrations Multi-Services",
+                    subtitle: "Connecteurs pour services tiers",
+                    item1: "Connecteurs email, APIs, fichiers, notifications",
+                    item2: "Automatisation de bout en bout",
+                    item3: "Processus métier entièrement automatisés"
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "Moteur n8n",
+                    desc: "n8n en self-hosted pour le contrôle total des workflows, avec support des nodes personnalisés et des expressions JavaScript."
+                },
+                arch2: {
+                    title: "Backend Airtable",
+                    desc: "Airtable comme base de données flexible avec API REST pour la lecture/écriture des données structurées."
+                },
+                arch3: {
+                    title: "Automatisation",
+                    desc: "Déclencheurs webhook et cron pour l'exécution automatique des workflows selon des événements ou des planifications."
+                },
+                feature1: "Workflows visuels no-code",
+                feature2: "Automatisation multi-services",
+                feature3: "Base de données relationnelle",
+                feature4: "Déclencheurs automatisés",
+                feature5: "Monitoring des exécutions"
+            },
+
+            juridique: {
+                title: "Assistant Juridique Intelligent pour l'Analyse de Contrats",
+                subtitle: "Analyse de documents juridiques avec Mistral OCR et recherche vectorielle FAISS",
+                category: "RAG",
+                personalProject: "Projet Personnel",
+                context: "Application d'analyse de documents juridiques combinant l'OCR de Mistral AI pour l'extraction de texte depuis des documents scannés et une base vectorielle FAISS avec Mistral Embeddings pour la recherche sémantique. Permet d'interroger le contenu des contrats en langage naturel et d'obtenir des analyses contextualisées.",
+                pipeline: "Pipeline d'Analyse",
+                feature_ocr: {
+                    title: "OCR & Extraction",
+                    subtitle: "Extraction de texte depuis documents scannés",
+                    item1: "Extraction via Mistral OCR (PDF et images)",
+                    item2: "Nettoyage et structuration du contenu",
+                    item3: "Préservation de la structure documentaire"
+                },
+                feature_index: {
+                    title: "Indexation Vectorielle FAISS",
+                    subtitle: "Recherche par similarité ultra-rapide",
+                    item1: "Chunking des documents juridiques",
+                    item2: "Embeddings via Mistral Embeddings",
+                    item3: "Indexation FAISS en mémoire"
+                },
+                feature_analysis: {
+                    title: "Analyse Juridique IA",
+                    subtitle: "Questions-réponses sur les contrats",
+                    item1: "Questions en langage naturel sur les contrats",
+                    item2: "Réponses contextualisées par Mistral AI",
+                    item3: "Basé sur les passages les plus pertinents"
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "OCR Mistral",
+                    desc: "Mistral OCR pour l'extraction de haute qualité du texte depuis documents scannés avec préservation de la structure."
+                },
+                arch2: {
+                    title: "Recherche Vectorielle",
+                    desc: "FAISS (Facebook AI Similarity Search) pour l'indexation et la recherche vectorielle rapide avec Mistral Embeddings pour la représentation sémantique."
+                },
+                arch3: {
+                    title: "Interface",
+                    desc: "Streamlit pour l'interface utilisateur avec upload de documents, visualisation des résultats et chat interactif."
+                },
+                feature1: "OCR Mistral haute qualité",
+                feature2: "Recherche vectorielle FAISS",
+                feature3: "Analyse juridique IA",
+                feature4: "Chat contextuel",
+                feature5: "Interface Streamlit",
+                feature6: "Support PDF et images",
+                sourceCode: "Code Source",
+                viewGithub: "Voir sur GitHub"
+            },
+
+            todoWhatsapp: {
+                title: "Gestion Intelligente de Tâches via WhatsApp",
+                subtitle: "Bot WhatsApp pour la gestion de tâches via Todoist avec agent IA Agno et GPT-4o",
+                category: "Chatbot",
+                personalProject: "Projet Personnel",
+                context: "Bot WhatsApp intelligent pour la gestion de tâches intégrant l'API Todoist. L'utilisateur interagit via WhatsApp en langage naturel pour créer, modifier, compléter et organiser ses tâches. L'agent IA (Agno + GPT-4o) interprète les intentions et exécute les actions correspondantes sur Todoist.",
+                features: "Fonctionnalités",
+                feature_bot: {
+                    title: "Bot WhatsApp",
+                    subtitle: "Messagerie intelligente",
+                    item1: "Réception et traitement des messages WhatsApp",
+                    item2: "Webhook FastAPI pour le traitement temps réel",
+                    item3: "Commandes en langage naturel"
+                },
+                feature_agent: {
+                    title: "Agent IA Intelligent",
+                    subtitle: "Interprétation des intentions",
+                    item1: "Agent Agno avec GPT-4o",
+                    item2: "Compréhension des demandes complexes",
+                    item3: "Création, modification, suppression, priorisation"
+                },
+                feature_todoist: {
+                    title: "Intégration Todoist",
+                    subtitle: "Synchronisation bidirectionnelle",
+                    item1: "Synchronisation avec l'API Todoist",
+                    item2: "Gestion des tâches, projets et priorités",
+                    item3: "CRUD complet via l'agent IA"
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "Backend API",
+                    desc: "FastAPI pour le serveur webhook recevant les messages WhatsApp avec validation et routage des requêtes."
+                },
+                arch2: {
+                    title: "Agent IA",
+                    desc: "Framework Agno avec GPT-4o pour le raisonnement et la compréhension du langage naturel avec outils Todoist intégrés."
+                },
+                arch3: {
+                    title: "Intégrations",
+                    desc: "WhatsApp Business API pour la messagerie et Todoist API pour la gestion des tâches, projets et labels."
+                },
+                feature1: "Bot WhatsApp interactif",
+                feature2: "Langage naturel",
+                feature3: "Gestion complète des tâches",
+                feature4: "Synchronisation Todoist",
+                feature5: "Agent IA intelligent",
+                feature6: "Priorisation automatique",
+                sourceCode: "Code Source",
+                viewGithub: "Voir sur GitHub"
+            },
+
+            agentWhatsapp: {
+                title: "Agent Conversationnel Intelligent et Persistant sur WhatsApp",
+                subtitle: "Bot WhatsApp avec Letta comme agent compagnon persistant avec mémoire à long terme",
+                category: "Chatbot",
+                personalProject: "Projet Personnel",
+                context: "Bot WhatsApp utilisant Letta (anciennement MemGPT) comme agent compagnon persistant avec mémoire à long terme. L'agent maintient le contexte des conversations passées, se souvient des préférences de l'utilisateur et supporte les messages textes et images pour une expérience conversationnelle naturelle et continue.",
+                features: "Fonctionnalités",
+                feature_agent: {
+                    title: "Agent Persistant Letta",
+                    subtitle: "Mémoire et contexte continus",
+                    item1: "Letta (MemGPT) comme moteur d'agent",
+                    item2: "Mémoire persistante des conversations",
+                    item3: "Construction d'un profil utilisateur au fil du temps"
+                },
+                feature_media: {
+                    title: "Support Multimédia",
+                    subtitle: "Texte et images",
+                    item1: "Traitement des messages textes et images",
+                    item2: "Analyse contextuelle des images envoyées",
+                    item3: "Réponses multimodales"
+                },
+                feature_memory: {
+                    title: "Mémoire Long Terme",
+                    subtitle: "Système de mémoire hiérarchique",
+                    item1: "Core memory, recall memory, archival memory",
+                    item2: "Contexte maintenu sur de longues périodes",
+                    item3: "Apprentissage continu des préférences"
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "Backend",
+                    desc: "FastAPI avec Uvicorn comme serveur ASGI haute performance pour le traitement des webhooks WhatsApp."
+                },
+                arch2: {
+                    title: "Agent Letta",
+                    desc: "Letta Client pour la gestion de l'agent persistant avec mémoire structurée et gestion automatique du contexte."
+                },
+                arch3: {
+                    title: "Messagerie",
+                    desc: "WhatsApp Business API pour la réception et l'envoi de messages multimédia (texte, images)."
+                },
+                feature1: "Mémoire persistante",
+                feature2: "Support texte et images",
+                feature3: "Profil utilisateur dynamique",
+                feature4: "Contexte long terme",
+                feature5: "Agent compagnon IA",
+                feature6: "Serveur ASGI performant",
+                sourceCode: "Code Source",
+                viewGithub: "Voir sur GitHub"
+            },
+
+            chatbotRag: {
+                title: "Chatbot RAG Hybride - Assistant IA pour Base de Données",
+                subtitle: "Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL via un pipeline de 6 agents orchestrés, RAG hybride et sécurité RBAC 4 couches",
+                category: "RAG",
+                personalProject: "Projet Personnel",
+                context: "Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL, les exécute sur une base PostgreSQL et retourne des réponses en français. Le système utilise un pipeline de 6 agents IA orchestrés via Agno Workflow, un RAG hybride (PgVector + SentenceTransformers) pour la récupération du schéma, une sécurité multi-couches RBAC avec 140+ patterns de guardrails, et une interface React 19 avec thème sombre/clair. Déployé via Docker Compose avec 3 services (PostgreSQL, FastAPI, React + Nginx).",
+                pipeline: "Pipeline Text-to-SQL (6 Agents)",
+                step1: {
+                    title: "Agent 1 : Analyse d'Intention",
+                    subtitle: "Compréhension de la question en langage naturel",
+                    item1: "Analyse des entités, contraintes et relations dans la question",
+                    item2: "Support de la mémoire conversationnelle pour les questions de suivi",
+                    item3: "Détection d'intention structurée (filtrage, agrégation, jointure)"
+                },
+                step2: {
+                    title: "Agent 2 : Récupération RAG du Schéma",
+                    subtitle: "Recherche hybride vectorielle + mot-clé",
+                    item1: "Recherche hybride dans PgVector avec embeddings SentenceTransformers",
+                    item2: "Récupération du contexte schéma, relations et règles métier",
+                    item3: "Knowledge base de 7 documents indexés sémantiquement"
+                },
+                step3: {
+                    title: "Agent 3 : Génération SQL",
+                    subtitle: "Création de requêtes PostgreSQL sécurisées",
+                    item1: "Génération de requêtes SELECT PostgreSQL via Mistral Large",
+                    item2: "Instructions dynamiques limitées aux tables autorisées (RBAC)",
+                    item3: "Utilisation du contexte schéma et des règles métier du RAG"
+                },
+                step4: {
+                    title: "Agent 4 : Validation Sécurité SQL",
+                    subtitle: "Double vérification agent + regex",
+                    item1: "Validation par agent IA (détection commandes destructives)",
+                    item2: "Vérification regex (extraction FROM/JOIN) contre tables autorisées",
+                    item3: "Blocage des accès non autorisés aux tables"
+                },
+                step5: {
+                    title: "Agent 5 : Exécution Base de Données",
+                    subtitle: "Requête en mode lecture seule",
+                    item1: "Exécution sur connexion PostgreSQL en mode read-only",
+                    item2: "Retour des résultats en format JSON (colonnes + lignes)"
+                },
+                step6: {
+                    title: "Agent 6 : Formatage de la Réponse",
+                    subtitle: "Réponse en français avec tableaux Markdown",
+                    item1: "Reformulation des résultats SQL en langage naturel français",
+                    item2: "Tableaux Markdown, formatage monétaire et masquage données sensibles"
+                },
+                securityTitle: "Sécurité Multi-Couches",
+                rbac: {
+                    title: "RBAC 4 Couches",
+                    desc: "Contrôle d'accès basé sur les rôles à 4 niveaux : détection de mots-clés dans la question, instructions dynamiques de génération SQL, validation par agent IA, et vérification regex des tables FROM/JOIN. Chaque utilisateur a des tables autorisées configurables par l'admin."
+                },
+                guardrails: {
+                    title: "Guardrails (140+ patterns)",
+                    desc: "4 catégories de protection : hors-sujet (~80 patterns), injection SQL (~30 patterns), injection de prompt (~25 patterns), et sécurité de sortie (masquage emails/téléphones). Authentification JWT avec validation mot de passe robuste et hachage bcrypt."
+                },
+                technicalArch: "Architecture Technique",
+                arch1: {
+                    title: "Backend FastAPI",
+                    desc: "API REST FastAPI avec Uvicorn, authentification JWT, routes protégées par rôle (admin/user), pipeline de 6 agents orchestrés via Agno Workflow, et historique des conversations en base."
+                },
+                arch2: {
+                    title: "RAG Hybride & IA",
+                    desc: "Mistral Large comme LLM principal via Agno. PgVector pour la recherche sémantique hybride avec embeddings SentenceTransformers (all-MiniLM-L6-v2). Knowledge base de 7 documents Markdown indexés avec chunking sémantique via Chonkie."
+                },
+                arch3: {
+                    title: "Frontend React 19",
+                    desc: "SPA React 19 + TypeScript avec Vite. Interface chat, panneau admin, historique, vue SQL, export CSV, thème sombre/clair. Déployé via Nginx en multi-stage Docker build."
+                },
+                arch4: {
+                    title: "Infrastructure Docker",
+                    desc: "Docker Compose orchestrant 3 services : PostgreSQL 17 + PgVector, FastAPI backend, React + Nginx frontend. Base de données avec 3 tables métier (clients, produits, commandes) et tables système (users, history, vectors)."
+                },
+                metricsTitle: "Métriques du Système",
+                metric1: { value: "6", label: "Agents IA orchestrés" },
+                metric2: { value: "4", label: "Couches de sécurité RBAC" },
+                metric3: { value: "140+", label: "Patterns de guardrails" },
+                metric4: { value: "3", label: "Services Docker" },
+                feature1: "Pipeline 6 agents Text-to-SQL",
+                feature2: "RAG hybride (vecteur + mot-clé)",
+                feature3: "RBAC 4 couches de sécurité",
+                feature4: "140+ guardrails patterns",
+                feature5: "Mémoire conversationnelle",
+                feature6: "Interface React dark/light",
+                feature7: "Panneau admin RBAC",
+                feature8: "Export CSV & vue SQL",
+                feature9: "Déploiement Docker Compose",
+                sourceCode: "Code Source",
+                viewGithub: "Voir sur GitHub"
             }
         }
     },
@@ -610,7 +1010,9 @@ const projectTranslations = {
             prev: "Previous project",
             next: "Next project",
             noPrev: "Previous project",
-            noNext: "Next project"
+            noNext: "Next project",
+            personalProject: "Personal Project",
+            category: "Category"
         },
 
         // Retirement Management
@@ -1161,6 +1563,404 @@ const projectTranslations = {
                 standard2: "IRRBB Guidelines",
                 standard3: "LCR/NSFR Requirements",
                 standard4: "Stress Testing Standards",
+                sourceCode: "Source Code",
+                viewGithub: "View on GitHub"
+            },
+
+            // ========================================
+            // PERSONAL PROJECTS
+            // ========================================
+
+            transcription: {
+                title: "Automatic Meeting Transcription & Summary",
+                subtitle: "Audio transcription and intelligent summary generation application with AssemblyAI and GPT-4o",
+                category: "Generative AI",
+                personalProject: "Personal Project",
+                context: "Application that converts audio files to text via AssemblyAI, then generates summaries or detailed explanations with GPT-4o. The Streamlit interface allows uploading an audio file, launching transcription and obtaining a structured summary exportable as PDF via FPDF.",
+                features: "Features",
+                feature_upload: {
+                    title: "Audio Upload & Transcription",
+                    subtitle: "Automatic audio to text conversion",
+                    item1: "Audio file upload (MP3, WAV, M4A)",
+                    item2: "Automatic transcription via AssemblyAI",
+                    item3: "Language detection and timestamps"
+                },
+                feature_summary: {
+                    title: "Intelligent Summary",
+                    subtitle: "Analysis and synthesis by GPT-4o",
+                    item1: "Structured summary generation via GPT-4o",
+                    item2: "Detail level selection (concise, detailed, complete)",
+                    item3: "Detailed explanations on demand"
+                },
+                feature_export: {
+                    title: "PDF Export",
+                    subtitle: "Professional documents generated",
+                    item1: "PDF document generation with FPDF",
+                    item2: "Complete transcription and summary included",
+                    item3: "Professional layout"
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "Audio Transcription",
+                    desc: "AssemblyAI for speech-to-text transcription with multilingual support and automatic language detection."
+                },
+                arch2: {
+                    title: "LLM Processing",
+                    desc: "OpenAI GPT-4o for transcribed text analysis and intelligent summary generation with specialized prompts."
+                },
+                arch3: {
+                    title: "User Interface",
+                    desc: "Streamlit for an intuitive web interface with file upload, real-time display and result download."
+                },
+                feature1: "Automatic audio transcription",
+                feature2: "Multilingual support",
+                feature3: "Multi-level summaries",
+                feature4: "Professional PDF export",
+                feature5: "Intuitive Streamlit interface",
+                feature6: "Automatic language detection",
+                sourceCode: "Source Code",
+                viewGithub: "View on GitHub"
+            },
+
+            ragSearch: {
+                title: "Intelligent Document Search System (RAG)",
+                subtitle: "RAG application for web document extraction and querying via FireCrawl and GPT-4o",
+                category: "RAG",
+                personalProject: "Personal Project",
+                context: "Retrieval-Augmented Generation (RAG) application that extracts content from web pages and public PDFs via FireCrawl, indexes content in a vector database, then allows asking natural language questions about the extracted content with contextualized answers via GPT-4o.",
+                pipeline: "RAG Pipeline",
+                feature_extract: {
+                    title: "Content Extraction",
+                    subtitle: "Intelligent web crawling and parsing",
+                    item1: "Crawling and extraction via FireCrawl",
+                    item2: "HTML parsing via BeautifulSoup",
+                    item3: "Data cleaning and structuring"
+                },
+                feature_index: {
+                    title: "Vector Indexing",
+                    subtitle: "Semantic similarity search",
+                    item1: "Semantic document chunking",
+                    item2: "Vector indexing via Agno agent",
+                    item3: "Fast similarity search"
+                },
+                feature_qa: {
+                    title: "Contextual Q&A",
+                    subtitle: "Intelligent document chat",
+                    item1: "Natural language questions",
+                    item2: "Contextualized answers by GPT-4o",
+                    item3: "Based on most relevant passages"
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "Extraction & Parsing",
+                    desc: "FireCrawl for intelligent web crawling and BeautifulSoup for HTML parsing and content cleaning."
+                },
+                arch2: {
+                    title: "Agent Framework",
+                    desc: "Agno for RAG agent orchestration with context management and vector embeddings."
+                },
+                arch3: {
+                    title: "Generation",
+                    desc: "OpenAI GPT-4o for contextualized response generation from the most relevant chunks."
+                },
+                feature1: "Intelligent web extraction",
+                feature2: "Complete RAG pipeline",
+                feature3: "Semantic search",
+                feature4: "Contextual chat",
+                feature5: "Streamlit interface",
+                feature6: "Multi-document support",
+                sourceCode: "Source Code",
+                viewGithub: "View on GitHub"
+            },
+
+            noCode: {
+                title: "No-Code Automation Platform & Workflow Orchestration",
+                subtitle: "Business workflow orchestration with n8n and Airtable for codeless automation",
+                category: "Automation",
+                personalProject: "Personal Project",
+                context: "No-code automation platform using n8n as a workflow orchestration engine and Airtable as a relational database. The system allows designing, executing and monitoring complex business workflows without writing code, with multiple integrations and automated triggers.",
+                features: "Features",
+                feature_workflow: {
+                    title: "n8n Workflow Orchestration",
+                    subtitle: "Visual workflow design",
+                    item1: "Visual design of complex workflows",
+                    item2: "Conditions, loops, parallelism and error handling",
+                    item3: "Automated triggers (webhooks, cron, events)"
+                },
+                feature_data: {
+                    title: "Airtable Data Management",
+                    subtitle: "Flexible relational database",
+                    item1: "Relational database as backend",
+                    item2: "Custom views and input forms",
+                    item3: "Native Airtable automations"
+                },
+                feature_integration: {
+                    title: "Multi-Service Integrations",
+                    subtitle: "Third-party service connectors",
+                    item1: "Email, API, file, notification connectors",
+                    item2: "End-to-end automation",
+                    item3: "Fully automated business processes"
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "n8n Engine",
+                    desc: "Self-hosted n8n for full workflow control, with custom node support and JavaScript expressions."
+                },
+                arch2: {
+                    title: "Airtable Backend",
+                    desc: "Airtable as a flexible database with REST API for reading/writing structured data."
+                },
+                arch3: {
+                    title: "Automation",
+                    desc: "Webhook and cron triggers for automatic workflow execution based on events or schedules."
+                },
+                feature1: "Visual no-code workflows",
+                feature2: "Multi-service automation",
+                feature3: "Relational database",
+                feature4: "Automated triggers",
+                feature5: "Execution monitoring"
+            },
+
+            juridique: {
+                title: "Intelligent Legal Assistant for Contract Analysis",
+                subtitle: "Legal document analysis with Mistral OCR and FAISS vector search",
+                category: "RAG",
+                personalProject: "Personal Project",
+                context: "Legal document analysis application combining Mistral AI OCR for text extraction from scanned documents and a FAISS vector database with Mistral Embeddings for semantic search. Allows querying contract content in natural language and obtaining contextualized analyses.",
+                pipeline: "Analysis Pipeline",
+                feature_ocr: {
+                    title: "OCR & Extraction",
+                    subtitle: "Text extraction from scanned documents",
+                    item1: "Extraction via Mistral OCR (PDF and images)",
+                    item2: "Content cleaning and structuring",
+                    item3: "Document structure preservation"
+                },
+                feature_index: {
+                    title: "FAISS Vector Indexing",
+                    subtitle: "Ultra-fast similarity search",
+                    item1: "Legal document chunking",
+                    item2: "Embeddings via Mistral Embeddings",
+                    item3: "In-memory FAISS indexing"
+                },
+                feature_analysis: {
+                    title: "AI Legal Analysis",
+                    subtitle: "Contract Q&A",
+                    item1: "Natural language questions about contracts",
+                    item2: "Contextualized answers by Mistral AI",
+                    item3: "Based on most relevant passages"
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "Mistral OCR",
+                    desc: "Mistral OCR for high-quality text extraction from scanned documents with structure preservation."
+                },
+                arch2: {
+                    title: "Vector Search",
+                    desc: "FAISS (Facebook AI Similarity Search) for fast vector indexing and search with Mistral Embeddings for semantic representation."
+                },
+                arch3: {
+                    title: "Interface",
+                    desc: "Streamlit for user interface with document upload, result visualization and interactive chat."
+                },
+                feature1: "High-quality Mistral OCR",
+                feature2: "FAISS vector search",
+                feature3: "AI legal analysis",
+                feature4: "Contextual chat",
+                feature5: "Streamlit interface",
+                feature6: "PDF and image support",
+                sourceCode: "Source Code",
+                viewGithub: "View on GitHub"
+            },
+
+            todoWhatsapp: {
+                title: "Intelligent Task Management via WhatsApp",
+                subtitle: "WhatsApp bot for task management via Todoist with Agno AI agent and GPT-4o",
+                category: "Chatbot",
+                personalProject: "Personal Project",
+                context: "Intelligent WhatsApp bot for task management integrating the Todoist API. Users interact via WhatsApp in natural language to create, modify, complete and organize their tasks. The AI agent (Agno + GPT-4o) interprets intentions and executes corresponding actions on Todoist.",
+                features: "Features",
+                feature_bot: {
+                    title: "WhatsApp Bot",
+                    subtitle: "Intelligent messaging",
+                    item1: "WhatsApp message reception and processing",
+                    item2: "FastAPI webhook for real-time processing",
+                    item3: "Natural language commands"
+                },
+                feature_agent: {
+                    title: "Intelligent AI Agent",
+                    subtitle: "Intent interpretation",
+                    item1: "Agno agent with GPT-4o",
+                    item2: "Complex request understanding",
+                    item3: "Create, modify, delete, prioritize tasks"
+                },
+                feature_todoist: {
+                    title: "Todoist Integration",
+                    subtitle: "Bidirectional synchronization",
+                    item1: "Synchronization with Todoist API",
+                    item2: "Task, project and priority management",
+                    item3: "Full CRUD via AI agent"
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "Backend API",
+                    desc: "FastAPI for the webhook server receiving WhatsApp messages with request validation and routing."
+                },
+                arch2: {
+                    title: "AI Agent",
+                    desc: "Agno framework with GPT-4o for reasoning and natural language understanding with integrated Todoist tools."
+                },
+                arch3: {
+                    title: "Integrations",
+                    desc: "WhatsApp Business API for messaging and Todoist API for task, project and label management."
+                },
+                feature1: "Interactive WhatsApp bot",
+                feature2: "Natural language",
+                feature3: "Complete task management",
+                feature4: "Todoist synchronization",
+                feature5: "Intelligent AI agent",
+                feature6: "Automatic prioritization",
+                sourceCode: "Source Code",
+                viewGithub: "View on GitHub"
+            },
+
+            agentWhatsapp: {
+                title: "Intelligent Persistent Conversational Agent on WhatsApp",
+                subtitle: "WhatsApp bot with Letta as a persistent companion agent with long-term memory",
+                category: "Chatbot",
+                personalProject: "Personal Project",
+                context: "WhatsApp bot using Letta (formerly MemGPT) as a persistent companion agent with long-term memory. The agent maintains context from past conversations, remembers user preferences and supports text and image messages for a natural and continuous conversational experience.",
+                features: "Features",
+                feature_agent: {
+                    title: "Letta Persistent Agent",
+                    subtitle: "Continuous memory and context",
+                    item1: "Letta (MemGPT) as agent engine",
+                    item2: "Persistent conversation memory",
+                    item3: "User profile building over time"
+                },
+                feature_media: {
+                    title: "Multimedia Support",
+                    subtitle: "Text and images",
+                    item1: "Text and image message processing",
+                    item2: "Contextual analysis of sent images",
+                    item3: "Multimodal responses"
+                },
+                feature_memory: {
+                    title: "Long-Term Memory",
+                    subtitle: "Hierarchical memory system",
+                    item1: "Core memory, recall memory, archival memory",
+                    item2: "Context maintained over long periods",
+                    item3: "Continuous preference learning"
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "Backend",
+                    desc: "FastAPI with Uvicorn as a high-performance ASGI server for WhatsApp webhook processing."
+                },
+                arch2: {
+                    title: "Letta Agent",
+                    desc: "Letta Client for persistent agent management with structured memory and automatic context management."
+                },
+                arch3: {
+                    title: "Messaging",
+                    desc: "WhatsApp Business API for receiving and sending multimedia messages (text, images)."
+                },
+                feature1: "Persistent memory",
+                feature2: "Text and image support",
+                feature3: "Dynamic user profile",
+                feature4: "Long-term context",
+                feature5: "AI companion agent",
+                feature6: "High-performance ASGI server",
+                sourceCode: "Source Code",
+                viewGithub: "View on GitHub"
+            },
+
+            chatbotRag: {
+                title: "Hybrid RAG Chatbot - AI Database Assistant",
+                subtitle: "Full-stack AI assistant that transforms natural language questions into SQL queries via a 6-agent orchestrated pipeline, hybrid RAG and 4-layer RBAC security",
+                category: "RAG",
+                personalProject: "Personal Project",
+                context: "Full-stack AI assistant that transforms natural language questions into SQL queries, executes them on a PostgreSQL database and returns answers in French. The system uses a 6 AI agent pipeline orchestrated via Agno Workflow, hybrid RAG (PgVector + SentenceTransformers) for schema retrieval, multi-layer RBAC security with 140+ guardrail patterns, and a React 19 interface with dark/light theme. Deployed via Docker Compose with 3 services (PostgreSQL, FastAPI, React + Nginx).",
+                pipeline: "Text-to-SQL Pipeline (6 Agents)",
+                step1: {
+                    title: "Agent 1: Intent Analysis",
+                    subtitle: "Natural language question understanding",
+                    item1: "Entity, constraint and relationship analysis in the question",
+                    item2: "Conversational memory support for follow-up questions",
+                    item3: "Structured intent detection (filtering, aggregation, join)"
+                },
+                step2: {
+                    title: "Agent 2: RAG Schema Retrieval",
+                    subtitle: "Hybrid vector + keyword search",
+                    item1: "Hybrid search in PgVector with SentenceTransformers embeddings",
+                    item2: "Schema context, relationships and business rules retrieval",
+                    item3: "Knowledge base of 7 semantically indexed documents"
+                },
+                step3: {
+                    title: "Agent 3: SQL Generation",
+                    subtitle: "Secure PostgreSQL query creation",
+                    item1: "PostgreSQL SELECT query generation via Mistral Large",
+                    item2: "Dynamic instructions limited to authorized tables (RBAC)",
+                    item3: "Usage of schema context and RAG business rules"
+                },
+                step4: {
+                    title: "Agent 4: SQL Security Validation",
+                    subtitle: "Dual agent + regex verification",
+                    item1: "AI agent validation (destructive command detection)",
+                    item2: "Regex verification (FROM/JOIN extraction) against authorized tables",
+                    item3: "Blocking unauthorized table access"
+                },
+                step5: {
+                    title: "Agent 5: Database Execution",
+                    subtitle: "Read-only query execution",
+                    item1: "Execution on read-only PostgreSQL connection",
+                    item2: "Results returned in JSON format (columns + rows)"
+                },
+                step6: {
+                    title: "Agent 6: Response Formatting",
+                    subtitle: "French response with Markdown tables",
+                    item1: "SQL results reformulated into French natural language",
+                    item2: "Markdown tables, currency formatting and sensitive data masking"
+                },
+                securityTitle: "Multi-Layer Security",
+                rbac: {
+                    title: "4-Layer RBAC",
+                    desc: "Role-based access control at 4 levels: keyword detection in the question, dynamic SQL generation instructions, AI agent validation, and regex verification of FROM/JOIN tables. Each user has admin-configurable authorized tables."
+                },
+                guardrails: {
+                    title: "Guardrails (140+ patterns)",
+                    desc: "4 protection categories: off-topic (~80 patterns), SQL injection (~30 patterns), prompt injection (~25 patterns), and output security (email/phone masking). JWT authentication with robust password validation and bcrypt hashing."
+                },
+                technicalArch: "Technical Architecture",
+                arch1: {
+                    title: "FastAPI Backend",
+                    desc: "FastAPI REST API with Uvicorn, JWT authentication, role-protected routes (admin/user), 6-agent pipeline orchestrated via Agno Workflow, and conversation history in database."
+                },
+                arch2: {
+                    title: "Hybrid RAG & AI",
+                    desc: "Mistral Large as main LLM via Agno. PgVector for hybrid semantic search with SentenceTransformers embeddings (all-MiniLM-L6-v2). Knowledge base of 7 Markdown documents indexed with semantic chunking via Chonkie."
+                },
+                arch3: {
+                    title: "React 19 Frontend",
+                    desc: "React 19 + TypeScript SPA with Vite. Chat interface, admin panel, history, SQL view, CSV export, dark/light theme. Deployed via Nginx with multi-stage Docker build."
+                },
+                arch4: {
+                    title: "Docker Infrastructure",
+                    desc: "Docker Compose orchestrating 3 services: PostgreSQL 17 + PgVector, FastAPI backend, React + Nginx frontend. Database with 3 business tables (clients, products, orders) and system tables (users, history, vectors)."
+                },
+                metricsTitle: "System Metrics",
+                metric1: { value: "6", label: "Orchestrated AI agents" },
+                metric2: { value: "4", label: "RBAC security layers" },
+                metric3: { value: "140+", label: "Guardrail patterns" },
+                metric4: { value: "3", label: "Docker services" },
+                feature1: "6-agent Text-to-SQL pipeline",
+                feature2: "Hybrid RAG (vector + keyword)",
+                feature3: "4-layer RBAC security",
+                feature4: "140+ guardrail patterns",
+                feature5: "Conversational memory",
+                feature6: "React dark/light interface",
+                feature7: "RBAC admin panel",
+                feature8: "CSV export & SQL view",
+                feature9: "Docker Compose deployment",
                 sourceCode: "Source Code",
                 viewGithub: "View on GitHub"
             }

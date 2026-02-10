@@ -53,6 +53,7 @@ const translations = {
         projects: {
             tag: "Projets",
             title: "Mes réalisations",
+            viewDetails: "Voir les détails",
             all: "Tous",
             ai: "IA",
             rag: "RAG",
@@ -162,6 +163,7 @@ const translations = {
         projects: {
             tag: "Projects",
             title: "My achievements",
+            viewDetails: "View details",
             all: "All",
             ai: "AI",
             rag: "RAG",
