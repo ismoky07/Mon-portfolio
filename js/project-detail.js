@@ -6,6 +6,7 @@
 let currentLanguage = localStorage.getItem('portfolioLanguage') || 'fr';
 
 document.addEventListener('DOMContentLoaded', function() {
+    initThemeToggle();
     initLanguageSwitcher();
     updateStaticTexts();
     updateYear();
@@ -110,4 +111,32 @@ function initNavbarScroll() {
             }
         });
     }
+}
+
+// ========================================
+// THEME TOGGLE (DARK/LIGHT)
+// ========================================
+function initThemeToggle() {
+    const savedTheme = localStorage.getItem('portfolioTheme') || 'dark';
+    applyTheme(savedTheme);
+
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.body.classList.add('theme-transition');
+            applyTheme(newTheme);
+            localStorage.setItem('portfolioTheme', newTheme);
+
+            setTimeout(function() {
+                document.body.classList.remove('theme-transition');
+            }, 300);
+        });
+    }
+}
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
 }

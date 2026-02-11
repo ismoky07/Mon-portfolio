@@ -30,6 +30,12 @@
     --border-color: #27272a;
     --glow-color: rgba(99, 102, 241, 0.3);
 
+    /* Navbar & ombres */
+    --navbar-bg: rgba(10, 10, 15, 0.8);
+    --navbar-bg-scrolled: rgba(10, 10, 15, 0.95);
+    --navbar-bg-mobile: rgba(10, 10, 15, 0.85);
+    --shadow-color: rgba(0, 0, 0, 0.2);
+
     /* Typographie */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -49,6 +55,80 @@
     --radius-lg: 20px;
     --radius-full: 9999px;
 }
+
+/* ========================================
+   LIGHT THEME
+   ======================================== */
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f4f4f5;
+    --bg-tertiary: #e4e4e7;
+    --bg-card: #ffffff;
+
+    --text-primary: #18181b;
+    --text-secondary: #52525b;
+    --text-muted: #71717a;
+
+    --accent-green: #059669;
+    --accent-orange: #d97706;
+    --accent-red: #dc2626;
+    --accent-purple: #7c3aed;
+
+    --border-color: #d4d4d8;
+    --glow-color: rgba(99, 102, 241, 0.15);
+
+    --navbar-bg: rgba(255, 255, 255, 0.8);
+    --navbar-bg-scrolled: rgba(255, 255, 255, 0.95);
+    --navbar-bg-mobile: rgba(255, 255, 255, 0.9);
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .lang-btn.active,
+[data-theme="light"] .filter-btn.active,
+[data-theme="light"] .nav-cta {
+    color: #ffffff;
+}
+
+[data-theme="light"] .nav-toggle span {
+    background: var(--text-primary);
+}
+
+/* Transition douce entre themes */
+body.theme-transition,
+body.theme-transition *,
+body.theme-transition *::before,
+body.theme-transition *::after {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* ========================================
+   THEME TOGGLE
+   ======================================== */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 12px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.theme-toggle .fa-sun { display: none; }
+.theme-toggle .fa-moon { display: inline; }
+[data-theme="light"] .theme-toggle .fa-sun { display: inline; }
+[data-theme="light"] .theme-toggle .fa-moon { display: none; }
 
 /* ========================================
    RESET & BASE
@@ -111,14 +191,14 @@ button {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(10, 10, 15, 0.8);
+    background: var(--navbar-bg);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid transparent;
     transition: var(--transition-normal);
 }
 
 .navbar.scrolled {
-    background: rgba(10, 10, 15, 0.95);
+    background: var(--navbar-bg-scrolled);
     border-bottom-color: var(--border-color);
 }
 
@@ -485,7 +565,7 @@ button {
     border-radius: var(--radius-lg);
     font-size: 0.85rem;
     font-weight: 500;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 40px var(--shadow-color);
     animation: float 4s ease-in-out infinite;
     z-index: 2;
 }
@@ -747,7 +827,7 @@ a.info-link:hover {
 .skill-card:hover {
     border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px var(--shadow-color);
 }
 
 .skill-header {
@@ -1124,7 +1204,7 @@ a.info-link:hover {
 .project-item:hover {
     border-color: var(--primary);
     transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px var(--shadow-color);
 }
 
 .project-item.hidden {
@@ -1579,7 +1659,7 @@ a.info-link:hover {
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(10, 10, 15, 0.85);
+        background: var(--navbar-bg-mobile);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
@@ -1615,6 +1695,16 @@ a.info-link:hover {
         top: 20px;
         right: 70px;
         margin-left: 0;
+    }
+
+    .theme-toggle {
+        position: absolute;
+        top: 18px;
+        right: 130px;
+        margin-left: 0;
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
     }
 
     .lang-btn {

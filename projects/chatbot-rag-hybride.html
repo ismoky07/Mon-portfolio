@@ -6,6 +6,14 @@
     <title>Chatbot RAG Hybride - Assistant IA Base de Données - Ismael OUATTARA</title>
     <meta name="description" content="Assistant IA full-stack Text-to-SQL avec pipeline 6 agents, RAG hybride, sécurité RBAC et interface React">
 
+    <!-- Theme (anti-flash) -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('portfolioTheme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../css/style.css?v=22">
+    <link rel="stylesheet" href="../css/style.css?v=23">
     <link rel="stylesheet" href="../css/project-detail.css?v=4">
 </head>
 <body>
@@ -36,6 +44,11 @@
                 <button class="lang-btn active" data-lang="fr" title="Français">FR</button>
                 <button class="lang-btn" data-lang="en" title="English">EN</button>
             </div>
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
         </div>
     </nav>
 
@@ -357,6 +370,6 @@
     <!-- Scripts -->
     <script src="../js/translations.js?v=6"></script>
     <script src="../js/project-translations.js?v=6"></script>
-    <script src="../js/project-detail.js?v=2"></script>
+    <script src="../js/project-detail.js?v=3"></script>
 </body>
 </html>

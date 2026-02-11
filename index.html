@@ -6,6 +6,14 @@
     <title>Ismael OUATTARA - AI Engineer Portfolio</title>
     <meta name="description" content="Portfolio d'Ismael OUATTARA - Ingénieur IA spécialisé en IA Générative, RAG et Systèmes Multi-Agents">
 
+    <!-- Theme (anti-flash) -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('portfolioTheme') || 'dark';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css?v=22">
+    <link rel="stylesheet" href="css/style.css?v=23">
 </head>
 <body>
     <!-- ========================================
@@ -29,7 +37,7 @@
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#about" class="nav-link" data-i18n="nav.about">À propos</a></li>
                 <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
-                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expérience</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expériences</a></li>
                 <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projets</a></li>
                 <li><a href="#education" class="nav-link" data-i18n="nav.education">Formation</a></li>
                 <li><a href="#contact" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a></li>
@@ -43,6 +51,11 @@
                     EN
                 </button>
             </div>
+            <!-- Theme Toggle -->
+            <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
             <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
@@ -236,7 +249,7 @@
     <section class="section experience" id="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag" data-i18n="experience.tag">Expérience</span>
+                <span class="section-tag" data-i18n="experience.tag">Expériences</span>
                 <h2 class="section-title" data-i18n="experience.title">Mon parcours professionnel</h2>
             </div>
             <div class="experience-timeline" id="experience-timeline">
@@ -377,6 +390,6 @@
     <!-- Scripts -->
     <script src="js/translations.js?v=6"></script>
     <script src="js/data.js?v=7"></script>
-    <script src="js/main.js?v=6"></script>
+    <script src="js/main.js?v=7"></script>
 </body>
 </html>

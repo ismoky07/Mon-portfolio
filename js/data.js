@@ -403,7 +403,7 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
                 en: "Full-stack AI assistant that transforms natural language questions into SQL queries via a 6-agent orchestrated pipeline, hybrid RAG, 4-layer RBAC security and React interface."
             },
             technologies: ["FastAPI", "React", "Mistral AI", "Agno", "PgVector", "PostgreSQL", "Docker", "SentenceTransformers"],
-            category: "rag",
+            category: "rag chatbot",
             github: "https://github.com/ismoky07/RAG_text_to_sql",
             demo: "",
             projectUrl: "projects/chatbot-rag-hybride.html"

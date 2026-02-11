@@ -6,7 +6,8 @@
 let currentLanguage = localStorage.getItem('portfolioLanguage') || 'fr';
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialiser le portfolio
+    // Initialiser le theme en premier
+    initThemeToggle();
     initLanguageSwitcher();
     initPortfolio();
     initNavigation();
@@ -295,7 +296,7 @@ function loadProjects() {
         <div class="project-item fade-in${project.projectUrl ? ' clickable' : ''}" data-category="${project.category}" ${project.projectUrl ? `onclick="window.location.href='${project.projectUrl}'"` : ''}>
             <div class="project-item-header">
                 <div class="project-item-icon">
-                    <i class="${getProjectIcon(project.category)}"></i>
+                    <i class="${getProjectIcon(project.category.split(' ')[0])}"></i>
                 </div>
                 <div class="project-links">
                     ${project.github ? `
@@ -470,7 +471,8 @@ function initProjectFilters() {
             const filter = this.getAttribute('data-filter');
 
             projects.forEach(project => {
-                if (filter === 'all' || project.getAttribute('data-category') === filter) {
+                const categories = project.getAttribute('data-category').split(' ');
+                if (filter === 'all' || categories.includes(filter)) {
                     project.classList.remove('hidden');
                     project.style.display = 'flex';
                 } else {
@@ -504,3 +506,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ========================================
+// GESTION DU THEME (DARK/LIGHT)
+// ========================================
+function initThemeToggle() {
+    const savedTheme = localStorage.getItem('portfolioTheme') || 'dark';
+    applyTheme(savedTheme);
+
+    const toggleBtn = document.getElementById('theme-toggle');
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', function() {
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            document.body.classList.add('theme-transition');
+            applyTheme(newTheme);
+            localStorage.setItem('portfolioTheme', newTheme);
+
+            setTimeout(function() {
+                document.body.classList.remove('theme-transition');
+            }, 300);
+        });
+    }
+}
+
+function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+}
