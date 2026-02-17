@@ -893,7 +893,7 @@ const projectTranslations = {
             },
 
             chatbotRag: {
-                title: "Chatbot RAG Hybride - Assistant IA pour Base de Données",
+                title: "Chatbot RAG Text-to-SQL - Assistant IA pour Base de Données",
                 subtitle: "Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL via un pipeline de 6 agents orchestrés, RAG hybride et sécurité RBAC 4 couches",
                 category: "RAG",
                 personalProject: "Projet Personnel",
