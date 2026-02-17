@@ -395,8 +395,8 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
         },
         {
             name: {
-                fr: "Chatbot RAG Hybride - Assistant IA pour Base de Données",
-                en: "Hybrid RAG Chatbot - AI Database Assistant"
+                fr: "Chatbot RAG Text-to-SQL - Assistant IA pour Base de Données",
+                en: "RAG Text-to-SQL Chatbot - AI Database Assistant"
             },
             description: {
                 fr: "Assistant IA full-stack qui transforme des questions en langage naturel en requêtes SQL via un pipeline de 6 agents orchestrés, RAG hybride, sécurité RBAC 4 couches et interface React.",
@@ -406,7 +406,7 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
             category: "rag chatbot",
             github: "https://github.com/ismoky07/RAG_text_to_sql",
             demo: "",
-            projectUrl: "projects/chatbot-rag-hybride.html"
+            projectUrl: "projects/chatbot-rag-text-to-sql.html"
         }
     ],
 

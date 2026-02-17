@@ -1875,7 +1875,7 @@ const projectTranslations = {
             },
 
             chatbotRag: {
-                title: "Hybrid RAG Chatbot - AI Database Assistant",
+                title: "RAG Text-to-SQL Chatbot - AI Database Assistant",
                 subtitle: "Full-stack AI assistant that transforms natural language questions into SQL queries via a 6-agent orchestrated pipeline, hybrid RAG and 4-layer RBAC security",
                 category: "RAG",
                 personalProject: "Personal Project",
