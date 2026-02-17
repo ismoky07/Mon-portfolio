@@ -591,24 +591,24 @@ const projectTranslations = {
 
             transcription: {
                 title: "Transcription & Résumé Automatique de Réunions",
-                subtitle: "Application de transcription audio et génération de résumés intelligents avec AssemblyAI et GPT-4o",
+                subtitle: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis utilise 2 agents IA (Agno + Mistral Large) pour générer des résumés ou des explications détaillées",
                 category: "IA Générative",
                 personalProject: "Projet Personnel",
-                context: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT-4o. L'interface Streamlit permet d'uploader un fichier audio, de lancer la transcription et d'obtenir un résumé structuré exportable en PDF via FPDF.",
+                context: "Application web combinant transcription audio et analyse intelligente par agents IA. L'utilisateur uploade un fichier audio qui est automatiquement transcrit via AssemblyAI (modèles universal-3-pro et universal-2) avec détection automatique de la langue. Le texte transcrit est ensuite traité par 2 agents IA spécialisés (Agno + Mistral Large) : un agent de résumé qui extrait les points clés, et un agent d'explication qui fournit une analyse détaillée. Les résultats sont exportables en PDF via FPDF. Les réponses sont générées dans la langue source de l'audio.",
                 features: "Fonctionnalités",
                 feature_upload: {
                     title: "Upload & Transcription Audio",
                     subtitle: "Conversion automatique de l'audio en texte",
-                    item1: "Upload de fichiers audio (MP3, WAV, M4A)",
-                    item2: "Transcription automatique via AssemblyAI",
-                    item3: "Détection de langue et horodatage"
+                    item1: "Upload fichiers audio (MP3, WAV)",
+                    item2: "Transcription via AssemblyAI (universal-3-pro + universal-2)",
+                    item3: "Détection automatique de la langue"
                 },
                 feature_summary: {
-                    title: "Résumé Intelligent",
-                    subtitle: "Analyse et synthèse par GPT-4o",
-                    item1: "Génération de résumés structurés via GPT-4o",
-                    item2: "Choix du niveau de détail (concis, détaillé, complet)",
-                    item3: "Explications détaillées sur demande"
+                    title: "2 Agents IA Spécialisés",
+                    subtitle: "Analyse par Agno + Mistral Large",
+                    item1: "Agent Résumeur : extraction des points clés et idées principales",
+                    item2: "Agent Explicateur : décomposition et analyse détaillée des concepts",
+                    item3: "Réponses générées dans la langue source de l'audio"
                 },
                 feature_export: {
                     title: "Export PDF",
@@ -620,22 +620,22 @@ const projectTranslations = {
                 technicalArch: "Architecture Technique",
                 arch1: {
                     title: "Transcription Audio",
-                    desc: "AssemblyAI pour la transcription speech-to-text avec support multilingue et détection automatique de la langue."
+                    desc: "AssemblyAI (modèles universal-3-pro et universal-2) pour la transcription speech-to-text avec détection automatique de la langue."
                 },
                 arch2: {
-                    title: "Traitement LLM",
-                    desc: "OpenAI GPT-4o pour l'analyse du texte transcrit et génération de résumés intelligents avec prompts spécialisés."
+                    title: "Agents IA",
+                    desc: "Framework Agno avec Mistral Large pour l'orchestration de 2 agents spécialisés (résumé et explication) avec prompts adaptés à la langue source."
                 },
                 arch3: {
                     title: "Interface Utilisateur",
                     desc: "Streamlit pour une interface web intuitive avec upload de fichiers, affichage en temps réel et téléchargement des résultats."
                 },
                 feature1: "Transcription audio automatique",
-                feature2: "Support multilingue",
-                feature3: "Résumés multi-niveaux",
-                feature4: "Export PDF professionnel",
-                feature5: "Interface intuitive Streamlit",
-                feature6: "Détection automatique de langue",
+                feature2: "2 agents IA (résumé + explication)",
+                feature3: "Détection automatique de langue",
+                feature4: "Réponses dans la langue source",
+                feature5: "Export PDF professionnel",
+                feature6: "Interface intuitive Streamlit",
                 sourceCode: "Code Source",
                 viewGithub: "Voir sur GitHub"
             },
@@ -1573,24 +1573,24 @@ const projectTranslations = {
 
             transcription: {
                 title: "Automatic Meeting Transcription & Summary",
-                subtitle: "Audio transcription and intelligent summary generation application with AssemblyAI and GPT-4o",
+                subtitle: "Application that converts audio files to text via AssemblyAI, then uses 2 AI agents (Agno + Mistral Large) to generate summaries or detailed explanations",
                 category: "Generative AI",
                 personalProject: "Personal Project",
-                context: "Application that converts audio files to text via AssemblyAI, then generates summaries or detailed explanations with GPT-4o. The Streamlit interface allows uploading an audio file, launching transcription and obtaining a structured summary exportable as PDF via FPDF.",
+                context: "Web application combining audio transcription and intelligent AI agent analysis. Users upload an audio file that is automatically transcribed via AssemblyAI (universal-3-pro and universal-2 models) with automatic language detection. The transcribed text is then processed by 2 specialized AI agents (Agno + Mistral Large): a summarizer agent that extracts key points, and an explainer agent that provides detailed analysis. Results are exportable as PDF via FPDF. Responses are generated in the source audio's language.",
                 features: "Features",
                 feature_upload: {
                     title: "Audio Upload & Transcription",
                     subtitle: "Automatic audio to text conversion",
-                    item1: "Audio file upload (MP3, WAV, M4A)",
-                    item2: "Automatic transcription via AssemblyAI",
-                    item3: "Language detection and timestamps"
+                    item1: "Audio file upload (MP3, WAV)",
+                    item2: "Transcription via AssemblyAI (universal-3-pro + universal-2)",
+                    item3: "Automatic language detection"
                 },
                 feature_summary: {
-                    title: "Intelligent Summary",
-                    subtitle: "Analysis and synthesis by GPT-4o",
-                    item1: "Structured summary generation via GPT-4o",
-                    item2: "Detail level selection (concise, detailed, complete)",
-                    item3: "Detailed explanations on demand"
+                    title: "2 Specialized AI Agents",
+                    subtitle: "Analysis by Agno + Mistral Large",
+                    item1: "Summarizer Agent: key points and main ideas extraction",
+                    item2: "Explainer Agent: concept decomposition and detailed analysis",
+                    item3: "Responses generated in the source audio's language"
                 },
                 feature_export: {
                     title: "PDF Export",
@@ -1602,22 +1602,22 @@ const projectTranslations = {
                 technicalArch: "Technical Architecture",
                 arch1: {
                     title: "Audio Transcription",
-                    desc: "AssemblyAI for speech-to-text transcription with multilingual support and automatic language detection."
+                    desc: "AssemblyAI (universal-3-pro and universal-2 models) for speech-to-text transcription with automatic language detection."
                 },
                 arch2: {
-                    title: "LLM Processing",
-                    desc: "OpenAI GPT-4o for transcribed text analysis and intelligent summary generation with specialized prompts."
+                    title: "AI Agents",
+                    desc: "Agno framework with Mistral Large for orchestrating 2 specialized agents (summary and explanation) with prompts adapted to the source language."
                 },
                 arch3: {
                     title: "User Interface",
                     desc: "Streamlit for an intuitive web interface with file upload, real-time display and result download."
                 },
                 feature1: "Automatic audio transcription",
-                feature2: "Multilingual support",
-                feature3: "Multi-level summaries",
-                feature4: "Professional PDF export",
-                feature5: "Intuitive Streamlit interface",
-                feature6: "Automatic language detection",
+                feature2: "2 AI agents (summary + explanation)",
+                feature3: "Automatic language detection",
+                feature4: "Responses in source language",
+                feature5: "Professional PDF export",
+                feature6: "Intuitive Streamlit interface",
                 sourceCode: "Source Code",
                 viewGithub: "View on GitHub"
             },

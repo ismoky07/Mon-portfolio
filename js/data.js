@@ -309,12 +309,12 @@ Strong expertise in AI agent orchestration, intelligent OCR, workflow automation
                 en: "Automatic Meeting Transcription & Summary"
             },
             description: {
-                fr: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT.",
-                en: "Application that converts audio files to text via AssemblyAI, then generates summaries or detailed explanations with GPT."
+                fr: "Application qui convertit des fichiers audio en texte via AssemblyAI, puis utilise 2 agents IA (Agno + Mistral Large) pour générer des résumés ou des explications détaillées avec export PDF.",
+                en: "Application that converts audio files to text via AssemblyAI, then uses 2 AI agents (Agno + Mistral Large) to generate summaries or detailed explanations with PDF export."
             },
-            technologies: ["AssemblyAI", "Streamlit", "FPDF", "OpenAI GPT-4o"],
+            technologies: ["AssemblyAI", "Agno", "Mistral AI", "Streamlit", "FPDF", "Python"],
             category: "ai",
-            github: "https://github.com/ismoky07/Talent-Performer-Projects/tree/main/2-assembyai",
+            github: "https://github.com/ismoky07/Speech_to_Text_AssembyAI",
             demo: "",
             projectUrl: "projects/transcription-reunions.html"
         },

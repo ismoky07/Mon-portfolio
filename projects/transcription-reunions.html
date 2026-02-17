@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transcription & Résumé Automatique de Réunions - Ismael OUATTARA</title>
-    <meta name="description" content="Application de transcription audio et résumé automatique de réunions avec AssemblyAI et GPT-4o">
+    <meta name="description" content="Application de transcription audio et résumé automatique avec AssemblyAI et 2 agents IA (Agno + Mistral Large)">
 
     <!-- Theme (anti-flash) -->
     <script>
@@ -63,7 +63,7 @@
                 <span data-i18n="projects.transcription.breadcrumbProject">Transcription Réunions</span>
             </div>
             <h1 class="project-title" data-i18n="projects.transcription.title">Transcription & Résumé Automatique de Réunions</h1>
-            <p class="project-subtitle" data-i18n="projects.transcription.subtitle">Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT-4o</p>
+            <p class="project-subtitle" data-i18n="projects.transcription.subtitle">Application qui convertit des fichiers audio en texte via AssemblyAI, puis utilise 2 agents IA (Agno + Mistral Large) pour générer des résumés ou des explications détaillées</p>
             <div class="project-meta">
                 <div class="meta-item">
                     <i class="fas fa-layer-group"></i>
@@ -87,9 +87,9 @@
                     <div class="content-section">
                         <h2><i class="fas fa-info-circle"></i> <span data-i18n="project.description">Description</span></h2>
                         <p data-i18n="projects.transcription.context">
-                            Application qui convertit des fichiers audio en texte via AssemblyAI, puis génère des résumés ou des explications détaillées avec GPT-4o.
-                            L'interface Streamlit permet d'uploader un fichier audio, de lancer la transcription et d'obtenir un résumé structuré exportable en PDF.
-                            Le système supporte plusieurs formats audio et détecte automatiquement la langue pour une transcription optimale.
+                            Application web combinant transcription audio et analyse intelligente par agents IA. L'utilisateur uploade un fichier audio qui est automatiquement transcrit via AssemblyAI (modèles universal-3-pro et universal-2) avec détection automatique de la langue.
+                            Le texte transcrit est ensuite traité par 2 agents IA spécialisés (Agno + Mistral Large) : un agent de résumé qui extrait les points clés, et un agent d'explication qui fournit une analyse détaillée.
+                            Les résultats sont exportables en PDF via FPDF. Les réponses sont générées dans la langue source de l'audio.
                         </p>
                     </div>
 
@@ -108,8 +108,9 @@
                             </div>
                             <div class="module-content">
                                 <ul>
-                                    <li data-i18n="projects.transcription.module1.item1">Upload fichiers audio (MP3, WAV, M4A)</li>
-                                    <li data-i18n="projects.transcription.module1.item2">Transcription automatique via AssemblyAI avec détection de langue et horodatage</li>
+                                    <li data-i18n="projects.transcription.module1.item1">Upload fichiers audio (MP3, WAV)</li>
+                                    <li data-i18n="projects.transcription.module1.item2">Transcription via AssemblyAI (universal-3-pro + universal-2)</li>
+                                    <li data-i18n="projects.transcription.module1.item3">Détection automatique de la langue</li>
                                 </ul>
                             </div>
                         </div>
@@ -119,14 +120,15 @@
                             <div class="module-header">
                                 <div class="module-icon"><i class="fas fa-brain"></i></div>
                                 <div class="module-title">
-                                    <h3 data-i18n="projects.transcription.module2.title">Résumé Intelligent</h3>
-                                    <span class="module-subtitle" data-i18n="projects.transcription.module2.subtitle">Génération de résumés via GPT-4o</span>
+                                    <h3 data-i18n="projects.transcription.module2.title">2 Agents IA Spécialisés</h3>
+                                    <span class="module-subtitle" data-i18n="projects.transcription.module2.subtitle">Analyse par Agno + Mistral Large</span>
                                 </div>
                             </div>
                             <div class="module-content">
                                 <ul>
-                                    <li data-i18n="projects.transcription.module2.item1">Génération de résumés structurés via GPT-4o</li>
-                                    <li data-i18n="projects.transcription.module2.item2">Choix du niveau de détail (résumé concis, résumé détaillé, explication complète)</li>
+                                    <li data-i18n="projects.transcription.module2.item1">Agent Résumeur : extraction des points clés et idées principales</li>
+                                    <li data-i18n="projects.transcription.module2.item2">Agent Explicateur : décomposition et analyse détaillée des concepts</li>
+                                    <li data-i18n="projects.transcription.module2.item3">Réponses générées dans la langue source de l'audio</li>
                                 </ul>
                             </div>
                         </div>
@@ -156,13 +158,13 @@
                             <div class="detail-item">
                                 <h3 data-i18n="projects.transcription.arch1.title">Transcription Audio</h3>
                                 <p data-i18n="projects.transcription.arch1.desc">
-                                    AssemblyAI pour la transcription speech-to-text avec support multilingue et détection automatique de la langue.
+                                    AssemblyAI (modèles universal-3-pro et universal-2) pour la transcription speech-to-text avec détection automatique de la langue.
                                 </p>
                             </div>
                             <div class="detail-item">
-                                <h3 data-i18n="projects.transcription.arch2.title">Traitement LLM</h3>
+                                <h3 data-i18n="projects.transcription.arch2.title">Agents IA</h3>
                                 <p data-i18n="projects.transcription.arch2.desc">
-                                    OpenAI GPT-4o pour l'analyse du texte transcrit et génération de résumés intelligents avec prompts spécialisés.
+                                    Framework Agno avec Mistral Large pour l'orchestration de 2 agents spécialisés (résumé et explication) avec prompts adaptés à la langue source.
                                 </p>
                             </div>
                             <div class="detail-item">
@@ -182,10 +184,11 @@
                         <h3><i class="fas fa-code"></i> <span data-i18n="project.technologies">Technologies</span></h3>
                         <div class="tech-tags">
                             <span class="tech-tag">AssemblyAI</span>
-                            <span class="tech-tag">OpenAI GPT-4o</span>
+                            <span class="tech-tag">Agno Framework</span>
+                            <span class="tech-tag">Mistral Large</span>
                             <span class="tech-tag">Streamlit</span>
                             <span class="tech-tag">FPDF</span>
-                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Python 3.13</span>
                         </div>
                     </div>
 
@@ -194,18 +197,18 @@
                         <h3><i class="fas fa-star"></i> <span data-i18n="project.keyFeatures">Points clés</span></h3>
                         <ul class="features-list">
                             <li data-i18n="projects.transcription.feature1">Transcription audio automatique</li>
-                            <li data-i18n="projects.transcription.feature2">Support multilingue</li>
-                            <li data-i18n="projects.transcription.feature3">Résumés multi-niveaux</li>
-                            <li data-i18n="projects.transcription.feature4">Export PDF professionnel</li>
-                            <li data-i18n="projects.transcription.feature5">Interface intuitive Streamlit</li>
-                            <li data-i18n="projects.transcription.feature6">Détection automatique de langue</li>
+                            <li data-i18n="projects.transcription.feature2">2 agents IA (résumé + explication)</li>
+                            <li data-i18n="projects.transcription.feature3">Détection automatique de langue</li>
+                            <li data-i18n="projects.transcription.feature4">Réponses dans la langue source</li>
+                            <li data-i18n="projects.transcription.feature5">Export PDF professionnel</li>
+                            <li data-i18n="projects.transcription.feature6">Interface intuitive Streamlit</li>
                         </ul>
                     </div>
 
                     <!-- GitHub -->
                     <div class="sidebar-section">
                         <h3><i class="fab fa-github"></i> <span data-i18n="projects.transcription.sourceCode">Code Source</span></h3>
-                        <a href="https://github.com/ismoky07/Talent-Performer-Projects/tree/main/2-assembyai" target="_blank" class="github-link-box">
+                        <a href="https://github.com/ismoky07/Speech_to_Text_AssembyAI" target="_blank" class="github-link-box">
                             <i class="fab fa-github"></i>
                             <span data-i18n="projects.transcription.viewGithub">Voir sur GitHub</span>
                             <i class="fas fa-external-link-alt"></i>
